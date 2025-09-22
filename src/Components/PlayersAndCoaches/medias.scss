@@ -1,0 +1,143 @@
+@media screen and (max-width: 1680px) {
+    .players-and-coaches {
+        width: 1180px;
+    }
+
+    .list-bars {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .players-and-coaches {
+        width: 1080px;
+
+        .content {
+
+
+            .search-result {
+
+                .row {
+
+                    .content-btn {
+
+                        .rectangle {
+                            grid-gap: 8px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1386px) {
+    .players-and-coaches {
+        width: 1020px;
+
+        .content {
+
+
+            .side-notes-player {
+                .rectangle-2 {
+                    padding: 0 10px;
+                }
+            }
+
+            .item-bar {
+                margin-top: -6.125rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .players-and-coaches {
+        padding: 20px 14px;
+        width: 100%;
+
+        .name-input {
+            width: 100%;
+
+            .text {
+                text-align: center;
+                width: 100%;
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+            .p-inputtext {
+                text-align: center;
+            }
+        }
+
+        .content {
+            width: 100%;
+
+            .search-result {
+                width: 100%;
+
+                .row {
+                    width: 100%;
+
+                    .amount-found {
+                        font-size: 14px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .list-bars {
+                        width: calc(100% + 30px) !important;
+                        padding-right: 14px;
+
+                        .content-btn {
+                            height: unset;
+
+                            .rectangle {
+                                flex-wrap: wrap;
+                                width: 100%;
+                                height: unset;
+                                justify-content: space-between;
+
+                                .photo-rectangle {
+                                    width: 56px;
+                                    height: 56px;
+
+                                    img.photo {
+                                        max-width: 56px;
+                                        max-height: 66px;
+                                    }
+                                }
+
+                                .info {
+                                    width: calc((100% - 96px)/2);
+                                    margin-right: 0;
+                                    box-sizing: border-box;
+                                    padding-right: 12px;
+
+                                    .name {
+                                        width: 150px;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .block:nth-child(3) {
+                                    width: calc((100% - 96px)/2);
+                                }
+
+                                .block.disqualification, .block.candidates {
+                                    margin-top: 0;
+                                    margin-bottom: 12px;
+                                    padding: 0 16px;
+                                    box-sizing: border-box;
+                                    width: 48%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+.settings {
+    margin: 1.25rem 0 0 1.06rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .fields-grid {
+        width: 100%;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        //width: 30%;
+        width: 390px;
+        .label {
+            margin-bottom: 10px;
+            &:first-child {
+              margin-top: 0;
+            }
+        }
+
+        .p-inputtext {
+            padding: 10.5px;
+            //margin-bottom: 10px;
+
+            width: 100%;
+            height: 42px;
+        }
+
+    }
+
+    .switch-frame {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+        .switch-frame2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .switch-obj {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 74px 20px 0;
+            width: 334px;
+
+            .p-inputnumber {
+                margin-left: 20px;
+                .p-inputnumber-input {
+                    width: 82px;
+                    height: 42px;
+
+                    background: #FFFFFF;
+
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17.5px;
+                    line-height: 21px;
+
+                    text-align: center;
+
+                    color: #465161;
+                }
+            }
+
+            .p-inputswitch-checked {
+                .p-inputswitch-slider {
+                    background: #3B82F6 !important;
+                }
+            }
+
+            .text {
+                margin-left: 14px;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17.5px;
+                line-height: 21px;
+
+                color: #465161;
+            }
+        }
+
+        .withoutSwitch {
+            margin: 0 60px 20px 0;
+            width: 334px;
+
+            .p-inputnumber {
+                margin-left: 20px;
+            }
+            .text {
+                margin-left: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.emb-loader {
+    height: 100%;
+
+    .emb-content {
+        display: inline-flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+
+        .p-button {
+            width: 100%;
+            margin-bottom: 10px;
+            background: var(--blue-50);
+            color: var(--blue-500);
+            border-color: var(--blue-100);
+        }
+
+        .emb-current {
+            background: #f9f9f9;
+            border-radius: 16px;
+            border: 1px solid #eee;
+            padding: 12px;
+            box-sizing: border-box;
+            height: 198px;
+            width: auto;
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 8px;
+
+            img {
+                max-height: 100%;
+
+                &.holder {
+                    opacity: 0.45;
+                }
+            }
+        }
+
+        .p-button-sm.button-del {
+            background: var(--red-50);
+            color: var(--red-200);
+            border: none;
+        }
+
+        .emb-input {
+            position: relative;
+
+            input {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                opacity: 0;
+                text-indent: -120px;
+                z-index: 2;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.color-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+    .color-row {
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .p-colorpicker {
+            margin-bottom: 10px;
+            .p-colorpicker-preview {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .color-label {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 21px;
+            color: #495057;
+        }
+    }
+}

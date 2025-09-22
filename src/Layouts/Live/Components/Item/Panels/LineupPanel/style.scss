@@ -1,0 +1,36 @@
+.lineup-panel {
+
+    .lineup-panel_body {
+        margin-top: 20px;
+        padding-bottom: 120px;
+
+        .hint {
+            text-align: center;
+        }
+
+        .schemas-btns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 24px 0;
+
+            .p-button {
+                margin: 8px 4px;
+            }
+        }
+
+        .line-controller {
+
+            .top {
+                text-align: center;
+            }
+
+            .options {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 8px;
+            }
+        }
+    }
+}

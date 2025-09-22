@@ -1,0 +1,125 @@
+.person-form {
+    background: #F5F9FF;
+    box-shadow: 0 4px 10px rgb(191 219 254 / 30%);
+    margin-bottom: .75rem;
+    position: relative;
+    .p-inputtext {
+        background: transparent;
+        border-color: #D0E1FD;
+        letter-spacing: .75px;
+        font-size: .9rem;
+
+        &::placeholder {
+            text-transform: uppercase;
+            // font-style: italic;
+            opacity: .7;
+        }
+
+        &._birthday {
+            max-width: 130px;
+        }
+    }
+
+    .p-inputgroup-addon {
+        background: #D0E1FD;
+        border-color: #D0E1FD;
+        font-size: .9rem;
+
+        &.state-status {
+            font-size: .75rem;
+        }
+    }
+
+    .p-button {
+        padding: .75rem;
+
+        span {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }
+    .p-menu {
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        z-index: 99;
+        padding: 0;
+        box-shadow: 0 4px 10px rgb(191 219 254 / 30%);
+        border: none;
+        width: 19.16vw;
+
+        .p-menuitem {
+            border-bottom: 1px solid var(--indigo-50);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        .person-suggestion_item {
+            min-height: 3.12rem;
+            display: flex;
+            align-items: center;
+            padding: 0 6px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background: var(--indigo-50);
+            }
+
+            .person-suggestion_body {
+                padding-left: 0.87rem;
+                padding-top: 0.25rem;
+
+                .name {
+                    font-size: 0.81rem;
+                    font-weight: 600;
+                    color: var(--bluegray-700);
+                    margin-bottom: .5rem;
+                    margin-top: .35rem;
+                }
+
+                .tags {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: .35rem;
+                    padding-bottom: .5rem;
+
+                    .p-tag {
+                        font-size: 0.625rem;
+                        font-weight: 300;
+                        background: var(--blue-50);
+                        color: var(--blue-500);
+                        border: 1px solid var(--blue-100);
+                        padding: 0.125rem 0.25rem;
+
+                        &.p-tag-danger {
+                            background: var(--red-400);
+                            color: var(--red-50);
+                            border: 1px solid var(--red-500);
+                        }
+                    }
+
+                    .danger {
+                        background: var(--red-50);
+                        color: var(--red-400);
+                        border: 1px solid var(--red-100);
+                    }
+                }
+            }
+
+            .person-icon {
+                width: 1.875rem;
+                height: 1.875rem;
+                padding: 0;
+
+                img {
+                  width: 1.875rem;
+                  height: 1.875rem;
+                  margin: 0;
+                }
+            }
+        }
+    }
+}

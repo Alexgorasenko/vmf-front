@@ -1,0 +1,325 @@
+.player-form-mask {
+
+    .p-sidebar {
+        left: 0;
+        right: 0;
+        width: 100% !important;
+        height: 75vh !important;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        padding-top: 1rem;
+
+        .p-sidebar-header {
+            display: none;
+        }
+
+        .p-sidebar-content {
+            position: relative;
+            padding-bottom: 4rem;
+
+            .form-actions {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: .75rem 1rem;
+                background: #fff;
+                display: flex;
+                gap: .75rem;
+
+                &>* {
+                    width: 100%;
+                }
+            }
+        }
+
+        .suggest-options {
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35 ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+
+            &.shown {
+                max-height: unset;
+            }
+
+            .cards {
+                display: flex;
+                gap: .75rem;
+                margin-top: .75rem;
+                flex-wrap: nowrap;
+
+                .suggest-card {
+                    background: var(--indigo-50);
+                    box-shadow: var(--common-shadow);
+                    border-radius: .5rem;
+                    width: 88px;
+                    aspect-ratio: 3/4;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-end;
+                    box-sizing: border-box;
+                    padding: .5rem;
+                    position: relative;
+                    background-size: 100%;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+
+                    .name {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: .6rem;
+                        font-weight: 500;
+                        background: rgba(255, 255, 255, .85);
+                        border-radius: .25rem;
+                        padding: .15rem .15rem .05rem;
+                    }
+
+                    .birthday {
+                        font-size: .6rem;
+                        font-weight: 600;
+                        margin-top: .1rem;
+                        background: rgba(255, 255, 255, .85);
+                        border-radius: .25rem;
+                        padding: .15rem .15rem .05rem;
+                    }
+
+                    .team {
+                        background: #fff;
+                        font-size: .6rem;
+                        display: flex;
+                        flex-direction: row;
+                        padding: .2rem;
+                        box-sizing: border-box;
+                        border-radius: .35rem;
+                        background: var(--gray-200);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        margin-top: .1rem;
+                        width: 100%;
+
+                        i {
+                            display: none;
+                        }
+
+                        span {
+                            font-weight: 600;
+                        }
+
+                        &.current {
+                            background: var(--orange-50);
+                            color: var(--orange-500);
+                        }
+                    }
+
+                    &.suggest-progress {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .player-form-top {
+            display: flex;
+
+            .photo {
+                width: 40%;
+                aspect-ratio: 3/4;
+                background: var(--indigo-50);
+                border-radius: .5rem;
+                box-shadow: var(--common-shadow);
+                position: relative;
+                background-size: 100%;
+                background-position: top center;
+                background-repeat: no-repeat;
+
+                .p-fileupload, .p-fileupload-choose {
+                  opacity: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .fileupload-cancel {
+                  position: absolute;
+                  width: 100%;
+                  bottom: 0rem;
+                  opacity: 0.85;
+                  background: var(--red-400);
+                }
+
+                .p-inputnumber {
+                    position: absolute;
+                    top: 0rem;
+                    right: -2rem;
+
+                    &::before {
+                        content: '#';
+                        width: 24px;
+                        height: 24px;
+                        font-weight: 600;
+                        color: var(--indigo-600);
+                        top: 10px;
+                        border-radius: 50%;
+                        background: var(--yellow-400);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        z-index: 2;
+                    }
+
+                    input {
+                        width: 82px;
+                        background: var(--indigo-500);
+                        border-radius: 2rem;
+                        text-align: center;
+                        color: var(--indigo-50);
+
+                        &::placeholder {
+                            font-size: .75rem;
+                            color: var(--indigo-50);
+                        }
+                    }
+                }
+            }
+
+            .status {
+                box-sizing: border-box;
+                padding-left: 1.5rem;
+                padding-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                gap: .5rem;
+
+                label {
+                    font-weight: 600;
+                    font-size: .9rem;
+                    padding-left: .25rem;
+                }
+
+                .squad-state-node {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+
+                .squad-state-action {
+                    margin-top: .5rem;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    text-decoration: underline;
+                    text-transform: lowercase;
+                    padding-left: .25rem;
+                }
+            }
+        }
+
+        span.p-input-icon-right {
+            width: 100%;
+
+            i {
+                top: 60%;
+            }
+        }
+
+        .p-inputtext {
+            width: 100%;
+            background: var(--indigo-50);
+            border-radius: .5rem;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            box-shadow: var(--common-shadow);
+            border: 1px solid var(--indigo-50);
+
+            &:focus, &:visited {
+                box-shadow: var(--common-shadow);
+                outline: none;
+                border: 1px solid var(--indigo-100);
+            }
+        }
+    }
+}
+
+.squad-controller {
+
+    .squad-players {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        .player-card {
+            background: #fff;
+            box-shadow: var(--common-shadow);
+            box-sizing: border-box;
+            padding: .75rem;
+            border-radius: .5rem;
+            display: flex;
+            gap: .75rem;
+            position: relative;
+
+            .p-tag.squadState {
+                position: absolute;
+                font-size: .55rem;
+                font-weight: normal;
+                padding: 0.05rem .25rem 0.05rem;
+                bottom: -0.25rem;
+                left: 3.5rem;
+                background: var(--action-grd);
+                color: var(--gray-900);
+
+                &.p-tag-danger {
+                    background: var(--red-100);
+                    color: var(--red-400);
+                }
+
+                &.p-tag-warning {
+                    background: var(--orange-100);
+                    color: var(--orange-400);
+                }
+            }
+
+            .player-photo {
+                width: 2.1rem;
+                height: 2.1rem;
+                border-radius: .25rem;
+                background: var(--indigo-50);
+                background-size: 120%;
+                background-position: top center;
+                background-repeat: no-repeat;
+            }
+
+            .player-num {
+                width: 2.1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                i {
+                    font-style: normal;
+                    font-size: .5rem;
+                }
+
+                span {
+                    margin-top: .15rem;
+                    display: block;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    opacity: .85;
+                }
+            }
+
+            .player-names {
+                font-size: .85rem;
+                width: calc(100% - 4.2rem);
+
+                &>div:first-child {
+                    font-weight: 600;
+                    margin-bottom: .15rem;
+                }
+            }
+        }
+    }
+}

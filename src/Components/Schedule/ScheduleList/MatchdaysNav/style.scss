@@ -1,0 +1,33 @@
+.matchdays-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .p-button {
+        margin-right: 0.87rem;
+        border-radius: 20px;
+        margin-bottom: 0.87rem;
+        position: relative;
+        background: var(--bluegray-50);
+        border-color: var(--bluegray-100);
+        color: var(--bluegray-400);
+        width: auto;
+        font-size: 0.81rem;
+
+        .pi {
+            margin-right: 0.37rem;
+        }
+
+        &.p-button-success {
+            background: var(--green-50);
+            color: var(--green-500);
+            border-color: var(--green-100);
+        }
+
+        &.selected {
+            background: var(--indigo-50);
+            color: var(--indigo-500);
+            border-color: var(--indigo-100);
+        }
+    }
+}

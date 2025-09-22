@@ -1,0 +1,128 @@
+.publish-match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+    position: relative;
+
+
+    .step_pablic_title{
+        margin-bottom: 8px;
+    }
+
+    .step_pablic_button-group{
+        position: absolute;
+        top: -8px;
+        left: 50px;
+        right: 50px;
+        display: flex;
+
+        .p-button {
+            width: auto;
+        }
+    }
+
+    .step_pablic_scoreboard{
+        display: flex;
+        position: absolute;
+        top:135px;
+        z-index: 999;
+
+        .scoreboard{
+            margin-right: 12px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    .step_pablic_main{
+        background: #FFFFFF;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        width: 100%;
+        max-width: 320px;
+        position: relative;
+        padding: 90px 25px 26px 27px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 128px;
+
+        .mvp {
+            margin-bottom: 1.5rem;
+
+            .p-inputgroup-addon {
+                font-size: .65rem;
+                padding: .5rem;
+            }
+
+            .p-inputgroup {
+
+                &:last-child {
+                    margin-top: .8rem;
+                }
+
+                .p-dropdown {
+
+                    .p-inputtext {
+                        font-size: .75rem;
+                        padding: .5rem;
+                    }
+
+                    .p-dropdown-trigger {
+                        width: 1.5rem;
+                    }
+
+                    .p-dropdown-clear-icon {
+                        width: auto;
+                        right: 1.5rem;
+                        top: 55%;
+                    }
+
+                    .pi {
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+
+        .main__switch{
+            display: grid;
+            grid-template-columns: 42px 1fr;
+            align-items: center;
+            gap:14px;
+            margin-bottom: 24.5px;
+
+            &.last{
+                margin-bottom: 14.5px;
+            }
+
+
+            .main__switch_label{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #282E38;
+            }
+        }
+        .main__input{
+            .p-inputgroup-addon{
+                width: 80px;
+            }
+            input{
+                text-align: center;
+            }
+        }
+    }
+    .p-button{
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+        .p-button-label {
+            flex:none;
+        }
+    }
+}

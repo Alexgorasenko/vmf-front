@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    .p-sidebar {
+        .side-notes-player {
+
+            .rectangle-2 {
+                background: transparent;
+
+                img {
+                    width: 110px;
+                }
+
+                .fio, .bday {
+                    width: 100%;
+                }
+
+                .bday {
+                    justify-content: flex-start;
+
+                    .icon {
+
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
+                .p-button-success {
+                    width: 100%;
+                    border: 1px solid var(--green-100);
+
+                    .p-button-label {
+                        flex: unset;
+                    }
+                }
+
+                .applications {
+
+                    .requests {
+                        .team-item {
+
+                            &.opened, &.opened.disq {
+                                height: unset;
+                                padding-bottom: 12px;
+                            }
+
+                            .opened-info {
+
+
+                                .player-info-group {
+                                    margin-bottom: 14px;
+
+                                    .position .icon img, .player-number .icon img {
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

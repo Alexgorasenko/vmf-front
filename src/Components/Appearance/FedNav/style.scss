@@ -1,0 +1,88 @@
+.create-dialog {
+
+    .field-radiobutton {
+        margin-bottom: .7rem;
+        transition: all .35s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            opacity: .78;
+        }
+
+        label {
+            margin-left: .5rem;
+            transition: all .35s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .78;
+            }
+        }
+    }
+
+    .control {
+        margin-top: 1rem;
+
+        .p-inline-message {
+            margin-top: .8rem;
+        }
+    }
+
+    .p-inline-message {
+
+        .p-inline-message-icon {
+            display: none;
+        }
+
+        .p-inline-message-text {
+            font-size: .9rem;
+            line-height: 1.4;
+            letter-spacing: .1px;
+        }
+    }
+}
+
+.appearance-card {
+    border-radius: 12px;
+    overflow: hidden;
+
+    .appearance-actions {
+        border: 1px solid var(--indigo-50);
+        background: 1px solid var(--indigo-100);
+        justify-content: space-between;
+        padding: .8rem 1rem;
+        gap: .8rem;
+
+        .p-button-sm {
+            padding: .5rem .8rem;
+            background: var(--indigo-50);
+            color: var(--indigo-500);
+            border-color: var(--indigo-100);
+
+            &.p-button-success {
+                background: var(--green-50);
+                color: var(--green-500);
+                border-color: var(--green-100);
+            }
+        }
+    }
+
+    .p-tree {
+        border: none;
+        padding: 0;
+        overflow: hidden;
+
+        .p-treenode-droppoint {
+            border-top: 1px solid var(--indigo-50);
+        }
+
+        .p-treenode-leaf, .p-treenode-content {
+            position: relative;
+
+            .pi-ellipsis-v {
+                position: absolute;
+                right: 1rem;
+            }
+        }
+    }
+}

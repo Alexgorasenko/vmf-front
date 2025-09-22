@@ -1,0 +1,205 @@
+.schedule {
+  width: 1280px;
+  height: 100vh;
+
+  .schedule-load {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .stage-progress {
+      margin-left: 40px;
+
+      .label {
+          font-size: 0.62rem;
+          color: var(--bluegray-400);
+          margin-bottom: 0.375rem;
+          display: block;
+      }
+
+      .p-progressbar {
+          height: 15px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 10px rgba(59, 130, 246, .2);
+
+          .p-progressbar-value {
+              background: var(--blue-500);
+          }
+
+          .p-progressbar-label {
+              font-size: 10px;
+              line-height: 15px;
+          }
+      }
+  }
+
+  .tour-list {
+    display: flex;
+    flex-direction: row;
+
+    .tour {
+      width: 240px;
+      height: 80px;
+
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      margin: 0px 10px 10px;
+
+      cursor: pointer;
+
+      .finished-tag {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: var(--orange-50);
+        color: var(--orange-300);
+      }
+
+      .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .tag {
+          padding: 3.5px 5.6px;
+          width: max-content;
+          height: auto;
+
+          background: #F5F9FF;
+          border-radius: 6px;
+
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 0.68rem;
+          line-height: 1rem;
+
+          color: #3B82F6;
+        }
+
+        .title {
+          height: auto;
+
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.87rem;
+          line-height: 1.06rem;
+
+          /* Lara/Blue Gray/bluegray-800 */
+
+          color: #37404C;
+          margin-bottom: 3px;
+        }
+      }
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 17px;
+      }
+    }
+  }
+
+  .content {
+    width: 77vw;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.within-list {
+        height: calc(100vh - 145px);
+        margin-top: 0px;
+    }
+
+    .nav {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-items: flex-start;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 1366px) {
+        grid-gap: 14px;
+      }
+
+      .nav-full {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+          margin-top: -10px;
+
+          .custom-tabs {
+              margin: 0;
+              padding-top: 0;
+          }
+      }
+
+      .over-list {
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          &>div {
+              width: 45%;
+          }
+      }
+
+      .over-slots {
+        width: 40vw;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+
+        .p-buttonset {
+          box-shadow: 1px 1px 10px rgb(59 130 246 / 20%);
+
+          @media screen and (max-width: 1366px) {
+            margin-top: -20px;
+          }
+
+          .p-button {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .p-dropdown {
+        border-radius: 15px;
+      }
+
+      .tabmenu {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-left: 20px;
+
+        .p-tabmenu .p-tabmenu-nav {
+          background: none;
+        }
+
+        .tabview-tab {
+          font-size: 14px;
+          line-height: 17px;
+          width: max-content;
+          background: none !important;
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@import './medias.scss';

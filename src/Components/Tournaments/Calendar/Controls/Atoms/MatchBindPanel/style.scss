@@ -1,0 +1,47 @@
+.bind-match {
+    position: absolute;
+    right: 6px;
+    width: 22px !important;
+    color: var(--bluegray-200);
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--bluegray-500);
+    }
+
+    &.binded {
+        color: var(--indigo-600);
+
+        &:hover {
+            color: var(--indigo-400);
+        }
+    }
+}
+
+.bind-options {
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        height: 36px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:nth-child(even) {
+            background: var(--bluegray-50);
+        }
+
+        &>div:first-child {
+            padding-left: .25rem;
+        }
+
+        &>div:last-child {
+            white-space: nowrap;
+            overflow-x: hidden;
+        }
+    }
+}

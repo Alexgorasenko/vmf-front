@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+    .tournaments {
+        height: auto;
+
+        .content.within-list {
+
+            .tournament-struct {
+
+                .model {
+                    flex-direction: column;
+                    padding: 20px 14px;
+
+                    .struct-card {
+                        width: 100%;
+                        margin-right: 0;
+                        height: auto;
+                        margin-bottom: 24px;
+
+                        .action {
+                            position: relative;
+                            padding: 12px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.finish-period {
+    padding-bottom: 135px;
+
+    .panel-action {
+
+        .p-button {
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .finish-options {
+        padding-top: 8px;
+
+        .check-option {
+            margin-top: 22px;
+
+            label {
+                margin-left: 11px;
+            }
+
+            .p-checkbox-box.p-highlight {
+                background: var(--blue-500);
+                border-color: var(--blue-500);
+            }
+        }
+
+        .mvp-selector {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+
+            .label {
+                width: 40%;
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .p-dropdown {
+                width: 60%;
+
+                .p-dropdown-label {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.tournaments {
+  width: 100%;
+  //height: calc(100vh - 120px);
+
+  @media screen and (max-width: 1366px) {
+      width: 1020px;
+  }
+
+  .tour-list {
+    display: flex;
+    flex-direction: row;
+
+    .splide__track {
+        max-width: 1280px;
+        padding: 8px !important;
+        padding-right: 30px !important;
+    }
+
+    .splide__arrows {
+        width: 1380px;
+        position: absolute;
+        top: 50px;
+        left: -50px;
+    }
+
+    .tour {
+      width: 240px;
+      height: 100px;
+
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+
+      margin-right: 14px;
+
+      cursor: pointer;
+
+      .finished-tag {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background: var(--orange-50);
+          color: var(--orange-300);
+      }
+
+      .name {
+        // display: flex;
+        // flex-direction: column;
+        margin-top: 30px;
+
+        .tag {
+          padding: 5px 10px;
+          //width: auto;
+          max-width: 150px;
+          height: 23px;
+
+          background: #F5F9FF;
+          border-radius: 6px;
+
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10.5px;
+          line-height: 16px;
+          text-align: left;
+          color: #3B82F6;
+        }
+
+        .title {
+          height: 18px;
+
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+
+          /* Lara/Blue Gray/bluegray-800 */
+
+          color: #37404C;
+          margin-bottom: 3px;
+        }
+      }
+        .longName {
+            margin-top: 15px;
+        }
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin: 30px 17px 30px 19px;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    @media screen and (max-width: 1440px) {
+        width: 1080px;
+    }
+
+    @media screen and (max-width: 1366px) {
+        width: 1020px;
+    }
+
+    &.within-list {
+        height: unset;
+    }
+
+    .tabmenu {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      max-width: 77vw;
+
+      .p-tabmenu .p-tabmenu-nav {
+          background: none;
+      }
+
+      .tabview-tab {
+        font-size: 1rem;
+        line-height: 17px;
+        width: max-content;
+        background: none !important;
+        border-radius: 0 !important;
+      }
+    }
+  }
+}
+
+@import './medias.scss';

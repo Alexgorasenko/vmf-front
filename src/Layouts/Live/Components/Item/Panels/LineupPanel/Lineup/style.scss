@@ -1,0 +1,85 @@
+.lineup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 1/0.85;
+    box-sizing: border-box;
+    padding-top: 24px;
+
+    &::before {
+        background: var(--blue-200);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-mask-image: url('./football.svg');
+        -webkit-mask-position: center;
+        -webkit-mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+    }
+
+    .lineup-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 25%;
+        box-sizing: border-box;
+        padding-top: 10px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        .lineup-row-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60px;
+            transition: all .35s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .75;
+            }
+
+            .lineup-row-item_num {
+                width: 34px;
+                height: 34px;
+                background: var(--blue-50);
+                border-radius: 12px;
+                box-shadow: 1px 1px 20px var(--blue-100);
+                font-size: 15px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--blue-900);
+
+                img {
+                    width: 32px;
+                }
+            }
+
+            .lineup-row-item_name {
+                font-size: 10px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                margin-top: 4px;
+                text-transform: uppercase;
+                color: var(--bluegray-900);
+            }
+
+            .lineup-row-item_team {
+                font-size: 8px;
+                white-space: nowrap;
+                margin-top: -1px;
+                color: var(--bluegray-600);
+            }
+        }
+    }
+}

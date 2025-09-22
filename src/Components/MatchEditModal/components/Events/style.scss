@@ -1,0 +1,50 @@
+.events-controller {
+
+    .title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #465161;
+    }
+
+    .navigate-btns {
+
+        .p-button {
+            padding: 11px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            &.p-button-secondary {
+                background: var(--bluegray-50);
+                box-shadow: 1px 1px 30px rgba(210, 210, 210, .5);
+            }
+
+            &.p-button-success {
+                box-shadow: 1px 1px 30px rgba(34, 197, 94, .2);
+
+                &:hover {
+                    background: var(--green-100) !important;
+                }
+            }
+
+            .pi {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@import './InitScore/style.scss';
+@import './GoalsController/style.scss';
+@import './SecondaryController/style.scss';
+@import './PublishMatch/style.scss'

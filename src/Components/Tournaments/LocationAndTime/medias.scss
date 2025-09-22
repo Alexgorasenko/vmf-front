@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .location-and-time {
+        width: 100%;
+        margin: 0px !important;
+
+        .bars {
+            &>div:first-child {
+                margin-right: 0 !important;
+            }
+        }
+
+        .fields-grid {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0;
+            margin: 0 !important;
+            padding-left: 14px;
+            padding-right: 14px;
+
+            .fields-group {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 30px 14px 6px;
+
+                .p-inputgroup.chips-container {
+                    height: unset;
+
+                    ul.p-chips-multiple-container {
+                        padding-top: 4px;
+                        box-sizing: border-box;
+
+                        .p-chips-token {
+                            padding: 4px 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

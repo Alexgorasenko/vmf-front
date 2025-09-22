@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .locations {
+
+        .toolbar {
+            width: 100%;
+            padding: 0 14px;
+
+            .p-buttonset {
+
+                .p-button {
+                    width: 25%;
+                    justify-content: center;
+
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                        width: 33.33%;
+                    }
+                }
+            }
+        }
+
+        .mean {
+            padding-top: 10px;
+
+            .staff-grid {
+                padding: 0 14px;
+                display: flex;
+                flex-direction: column;
+                grid-gap: 0;
+
+                .person-item {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,239 @@
+.player-selector_player {
+    background: #F7F7FE;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 14px 5px 14px 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 8px;
+    transition: 0.4s ease-in-out;
+
+    i.pi-times-circle {
+        color: #FFACA7;
+        position: absolute;
+        right: 11px;
+        top: 8px;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: .78;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        opacity: .88;
+        background: #fff;
+    }
+
+    &.selected {
+        background: #e1f1e6;
+    }
+
+    .block__number{
+        position: absolute;
+        top:8px;
+        left:-5px;
+        background: #6366F1;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        border:unset;
+    }
+}
+
+.players-list {
+    padding: 10px;
+}
+
+.block__step_two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    position: relative;
+
+    .p-button.add-event {
+        padding: 11px 16px;
+        background: var(--indigo-50);
+        color: var(--indigo-500);
+        border-radius: 20px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        margin: 0px 10px;
+        font-weight: 500;
+        transition: all 0.4s ease-in-out;
+        box-shadow: 1px 1px 10px rgb(99 102 241 / 10%);
+        margin-left: 0;
+        justify-content: center;
+
+        .p-button-label {
+            flex: unset;
+        }
+    }
+
+    .step__two_title {
+        margin-top: 31px;
+        margin-bottom: 8px;
+    }
+
+    .step__two_button-group{
+        max-height: 38px;
+        position: absolute;
+        top: 24px;
+        left: 50px;
+        right: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .step__two_main{
+        margin-top: 23px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: calc(86vh - 216px);
+        // overflow: scroll;
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+
+        .step__two_main_block{
+            width: 100%;
+            max-width: 260px;
+            margin-right: 25px;
+            animation-name: anime;
+            animation-duration: 2s;
+            @keyframes anime {
+                0% {
+                    opacity: 0
+                }
+                100% {
+                    opacity: 1
+                }
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            &.players-list {
+                background: #F6F9FC;
+                border-radius: 8px;
+
+                .block__title {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding-top: 10px;
+
+                    .p-button {
+                        background: var(--bluegray-100);
+                        color: var(--bluegray-400);
+                        border: none;
+                        padding: 5px 17px 6px;
+                        border-radius: 12px;
+                        font-size: 13px;
+                        margin-top: 8px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            .block__player{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 92%;
+                overflow-y: scroll;
+                box-sizing: border-box;
+                padding-left: 20px;
+
+                .item__player_block.dizable {
+                    opacity: 1 !important;
+                }
+
+                .item__player_block {
+                    transition: all .6s ease-in-out;
+
+                    &:hover {
+                        opacity: .88;
+                        background: #fff;
+                        box-shadow: none;
+                    }
+                }
+
+                .item__player_block.player:not(.dizable) {
+                    background: var(--green-100);
+                }
+
+                .block__name {
+                    color: var(--bluegray-800);
+                }
+
+                &::-webkit-scrollbar{
+                    width: 0;
+                }
+
+                .block__player_null{
+                    background: #F7F7FE;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    width: 206px;
+                    padding: 14px 5px 14px 34px;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+
+                .player{
+                    width: 206px;
+
+                    &:first-child{
+                        margin-top: 10px;
+                    }
+                    .block__number{
+                        width: 32px;
+                        height: 32px;
+                        top:6px;
+                    }
+                }
+            }
+        }
+
+        .p-button.p-button-text{
+            background: rgba(100, 116, 139, 0.04);
+            border-color: transparent;
+            color: #6366F1;;
+            margin-right: 15px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .p-button.p-button-text:enabled:hover{
+            background-color: transparent;
+            color: #6366F1;
+            border-color: transparent;
+        }
+    }
+
+}

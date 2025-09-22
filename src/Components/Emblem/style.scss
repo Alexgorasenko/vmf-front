@@ -1,0 +1,62 @@
+.emblem {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.backdroped {
+        background: #fff;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 2;
+            background-image: url('./backdroped_cover.png');
+            background-size: cover;
+        }
+    }
+    &.transparent {
+        background: transparent;
+    }
+    &.representative {
+        background-color: #BCBDF9;   
+    }
+    &.xl {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 14px;
+    }
+
+    &.lg {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 12px;
+    }
+
+    &.md {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 10px;
+    }
+
+    &.sm {
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: 8px;
+    }
+
+    &.xs {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 6px;
+    }
+
+    img {
+        height: 100%;
+    }
+}

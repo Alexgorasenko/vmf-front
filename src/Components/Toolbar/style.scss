@@ -1,0 +1,144 @@
+:root {
+    --common-shadow: 1px 1px 1rem rgb(99 102 241 / 7%);
+    --action-grd: linear-gradient(to bottom, var(--yellow-400), var(--yellow-500));
+    --action-shadow: 1px 1px 1rem rgb(238 191 49 / 35%);
+}
+
+.page-toolbar {
+    background: linear-gradient(180deg, #F5F5FD, #FFFFFF 30%, #F5F5FD);
+    margin-top: -1.12rem;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-200);
+    border-top: 1px solid var(--gray-200);
+
+    .container {
+        width: 100%;
+        display: flex;
+
+        & > div {
+            height: 52px;
+            display: flex;
+            border-right: 1px solid var(--gray-200);
+            padding-right: .75rem;
+            padding-left: .75rem;
+            align-items: center;
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        .p-inputtext {
+            background: transparent;
+            border: none;
+            font-size: .85rem;
+            width: 320px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        .stage-progress {
+
+            .label {
+                font-size: .75rem;
+                white-space: nowrap;
+            }
+
+            .p-progressbar {
+                height: .85rem;
+                margin-top: .1rem;
+
+                .p-progressbar-value {
+                    background: var(--blue-400);
+                }
+
+                .p-progressbar-label {
+                    line-height: .85rem;
+                    font-size: .65rem;
+                }
+            }
+        }
+
+        .custom-input {
+            margin-top: 0;
+            width: 240px;
+            background: none;
+            box-shadow: none;
+            gap: .5rem;
+
+            .p-dropdown {
+                width: calc(100% - 2.5rem);
+
+                &.p-focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                .p-dropdown-trigger {
+                    width: 1rem;
+
+                    .p-dropdown-trigger-icon {
+                        font-size: .85rem;
+                    }
+                }
+            }
+
+            .icon {
+                width: 2rem;
+                height: 2rem;
+                border-radius: .5rem;
+            }
+        }
+
+        .btn-group {
+            display: flex;
+            gap: .5rem;
+
+            .p-button {
+                padding: 0.4rem 0.75rem;
+                background: #fff;
+                border: none;
+                font-size: .85rem;
+                white-space: nowrap;
+                overflow: hidden;
+
+                &:hover {
+                    border: none !important;
+                }
+
+                &:not(.p-button-outlined) {
+                    background: var(--blue-500);
+                }
+
+                span {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .custom-tabs {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: inline-flex;
+            gap: .75rem;
+
+            .custom-tabs_btn {
+                margin: 0;
+                padding: .4rem 1.15rem .4rem .75rem;
+                border-radius: .35rem;
+                background: #fff;
+                color: var(--indigo-600);
+
+                &.active {
+                    background: var(--action-grd);
+                    color: var(--gray-900);
+                }
+            }
+        }
+    }
+}

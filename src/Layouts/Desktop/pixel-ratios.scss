@@ -1,0 +1,34 @@
+html {
+    @media screen and (min-width: 768px) {
+        @media only screen and (min--moz-device-pixel-ratio: 1.1),
+            (-o-min-device-pixel-ratio: 10/9),
+            (-webkit-min-device-pixel-ratio: 1.1),
+            (min-device-pixel-ratio: 1.1) {
+
+            font-size: 14px;
+        }
+
+        @media only screen and (min--moz-device-pixel-ratio: 1.25),
+            (-o-min-device-pixel-ratio: 5/4),
+            (-webkit-min-device-pixel-ratio: 1.25),
+            (min-device-pixel-ratio: 1.25) {
+
+            font-size: 12px;
+        }
+
+        @media only screen and (min--moz-device-pixel-ratio: 1.5),
+            (-o-min-device-pixel-ratio: 3/2),
+            (-webkit-min-device-pixel-ratio: 1.5),
+            (min-device-pixel-ratio: 1.5) {
+
+            font-size: 11px;
+        }
+    }
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 1.1),
+    (-o-min-device-pixel-ratio: 10/9),
+    (-webkit-min-device-pixel-ratio: 1.1),
+    (min-device-pixel-ratio: 1.1) {
+
+}

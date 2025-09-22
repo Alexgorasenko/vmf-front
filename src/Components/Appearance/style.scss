@@ -1,0 +1,37 @@
+.appearance {
+    //max-width: 700px;
+    .content {
+        .appearance-nav {
+            max-width: 420px;
+            .appearance-card {
+                box-shadow: 1px 1px 20px rgb(99 102 241 / 10%);
+
+                .editNodeBtn {
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                .appearance-actions {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    
+                    button {
+                        transition: all .4s ease-in-out;
+
+                        opacity: 100%;
+                        &:hover {
+                            opacity: 40%;
+                        }
+                    }
+                    .savebtn {
+                        //background-color: green;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//@import './medias.scss'

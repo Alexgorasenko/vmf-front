@@ -1,0 +1,242 @@
+.location-and-time {
+  margin: 20px 0 0 17px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+
+    .slidemenu {
+      position: absolute;
+      z-index: 1;
+      left: 33px;
+      top: 294px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+
+      width: 388px;
+      height: 220px;
+
+      margin-top: 4px;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3.5px 0px;
+
+        width: 377px;
+        height: auto;
+
+        background: #FFFFFF;
+
+        border: 1px solid #DEE2E6;
+        border-radius: 6px;
+
+        .menu-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10.5px 17.5px;
+
+          width: 377px;
+          height: 51px;
+
+          .icon {
+            width: 14px;
+            height: 14px;
+            margin-right: 7px;
+          }
+
+          .text {
+            width: 313.87px;
+            height: 14px;
+          }
+        }
+
+        .menu-item:hover {
+          background: #F6F9FC;
+        }
+      }
+    }
+
+    .text {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17.5px;
+      line-height: 21px;
+
+      color: #495057;
+
+      margin-bottom: 14px;
+    }
+
+    .p-inputtext {
+      padding: 10.5px;
+
+      width: 390px;
+      height: 42px;
+      margin-bottom: 39px;
+    }
+  }
+
+  .location {
+    width: 845px;
+    height: 312px;
+
+    .location-background {
+      margin-top: -13px;
+      width: 845px;
+      height: max-content;
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      .p-button-rounded.p-button-danger.p-button-outlined {
+
+        position: relative;
+        width: 38px;
+        height: 38px;
+        left: 375px;
+        border: 1px solid #64748B;
+        border-radius: 28px;
+
+        color: #64748B;
+
+      }
+
+      .p-button-rounded.p-button-danger.p-button-outlined:active {
+        background: #64748B;
+        color: white;
+      }
+
+      .dates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        margin-top: 43px;
+
+        .p-inputgroup {
+          margin-left: 25px;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          width: 385px;
+          height: max-content;
+
+          background: #E9ECEF;
+          border: 1px solid #CED4DA;
+          border-radius: 6px;
+
+          .p-inputgroup-addon {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 auto;
+
+            width: auto;
+            height: 42px;
+
+            background: none;
+
+            border: none;
+
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #6C757D;
+          }
+
+          .p-chips {
+            display: inline-flex;
+          }
+
+          .p-chips-multiple-container {
+            height: max-content;
+            margin: 0;
+            padding: 4px 0 0 7px;
+            min-height: 42px;
+            cursor: text;
+            overflow: visible;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            border-left: 1px solid #CED4DA;
+            border-bottom: none;
+            border-right: none;
+            border-top: none;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+          }
+
+          .p-chips-token {
+            background: #EFF6FF;
+            height: 31.5px;
+            cursor: default;
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto;
+            margin-bottom: 4.5px;
+          }
+
+          .p-chips-input-token {
+            flex: 1 1 auto;
+            display: inline-flex;
+          }
+
+          .p-chips-token-icon {
+            cursor: pointer;
+          }
+
+          .p-chips-input-token input {
+            border: 0 none;
+            outline: 0 none;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+            border-radius: 0;
+            width: 100%;
+          }
+
+          .p-fluid .p-chips {
+            display: flex;
+          }
+
+        }
+      }
+    }
+
+    .tag {
+      margin-left: 19px;
+
+      padding: 3.5px 5.6px;
+      width: auto;
+      height: 28px;
+
+      background: #F5F9FF;
+      border-radius: 6px;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+
+      color: #3B82F6;
+    }
+  }
+}

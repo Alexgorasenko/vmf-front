@@ -1,0 +1,94 @@
+.menu {
+
+    .menu-item {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+        align-items: center;
+        border-radius: 8px;
+        transition: all 0.35s ease-in-out;
+
+        .pi {
+            margin-right: 0.75rem;
+            color: #F7F7FE;
+            transition: all 0.35s ease-in-out;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.18rem;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.04em;
+            color: #F7F7FE;
+            transition: all 0.35s ease-in-out;
+        }
+
+        &:hover {
+            opacity: .58;
+            cursor: pointer;
+
+            span, .pi {
+                color: #BCBDF9; /*indigo-200*/
+            }
+        }
+
+        &.active {
+            background: rgba(0, 0, 0, .15);
+
+            span, .pi {
+                color: #BCBDF9; /*indigo-200*/
+            }
+        }
+    }
+
+    &.last {
+        position: absolute;
+        bottom: 1rem;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+.sideblock.compact {
+
+    .menu {
+
+        .menu-item {
+            padding: 10px 8px 10px 16px;
+
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.sideblock.collapsed {
+
+    .menu {
+        padding-left: 10px;
+
+        .menu-item {
+            justify-content: center;
+            padding: 12px 8px;
+
+            span {
+                display: none;
+            }
+
+            .pi {
+                margin: 0;
+            }
+        }
+
+        &.last {
+            position: absolute;
+            left: 193px;
+        }
+    }
+}
+
+@import './medias.scss';

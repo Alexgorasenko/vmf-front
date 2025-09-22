@@ -1,0 +1,26 @@
+.list-loader {
+
+    .top {
+        display: flex;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+        height: 106px;
+        align-items: flex-end;
+        padding: 12px;
+        box-sizing: border-box;
+
+        .p-skeleton {
+            margin-right: 8px;
+        }
+    }
+
+    .loader-list {
+        flex-direction: column;
+        margin-top: 26px;
+
+        .p-skeleton {
+            margin-bottom: 12px;
+        }
+    }
+}

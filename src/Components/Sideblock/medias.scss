@@ -1,0 +1,60 @@
+@media screen and (max-width: 1600px) {
+    .menu {
+
+        .divider {
+            margin: .9rem 0;
+        }
+
+        .menu-item {
+            padding: .65rem;
+
+            span {
+                font-size: .9rem;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .menu {
+
+        .divider {
+            margin: 0.55rem 0;
+        }
+
+        .menu-item {
+            padding: 0.45rem 0.75rem 0.35rem 1.37rem;
+
+            span {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .menu {
+
+        .divider {
+            margin: 0.35rem 0;
+        }
+
+        .menu-item {
+            padding: 0.35rem 0.75rem 0.25rem 1.37rem;
+
+            span {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collapse-trigger {
+        position: absolute;
+        right: -50px;
+        top: 5px;
+    }
+}

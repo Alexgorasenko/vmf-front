@@ -1,0 +1,207 @@
+.request-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 34px;
+  margin-bottom: 10px;
+  width: 836px;
+  height: 82px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+    &.isActive {
+        background: #F4FCF7;
+    }
+  .team-block {
+    width: 243px;
+    // margin-left: 16px;
+
+    .line {
+      width: 240px;
+      border: 1px solid #DFE7EF;
+      margin-top: 3px;
+      margin-bottom: 3px;
+    }
+
+    .leader {
+      width: 239px;
+      display: flex;
+      flex-direction: row;
+
+      .name {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+        padding-left: 12px;
+      }
+    }
+    .team {
+      width: 239px;
+      display: flex;
+      flex-direction: row;
+
+      .name {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+        padding-left: 12px;
+      }
+    }
+
+  }
+
+  .meta-block {
+    width: 248.2px;
+    height: 49px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    .info {
+      width: 196px;
+      height: 24px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+    }
+
+    .tag {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 3.5px 5.6px;
+      gap: 3.5px;
+      width: max-content;
+      height: 23px;
+      background: #F5F9FF;
+      border-radius: 6px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 16px;
+      color: #3B82F6;
+      flex: none;
+      flex-grow: 0;
+    }
+  }
+
+  .status-block {
+    width: 196px;
+    height: 49px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    .info {
+      width: 196px;
+      height: 24px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #818EA1;
+    }
+
+    .tag-true {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3.5px 5.6px;
+      gap: 3.5px;
+
+      width: max-content;
+      height: 23px;
+
+      background: #F4FCF7;
+      border-radius: 6px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 9.5px;
+      line-height: 16px;
+
+      color: #22C55E;
+    }
+
+    .tag-false {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3.5px 5.6px;
+      gap: 3.5px;
+
+      width: max-content;
+      height: 23px;
+
+      background: #FFF5F5;
+      border-radius: 6px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 9.5px;
+      line-height: 16px;
+
+      color: #FF3D32;
+    }
+
+    .tag-awaiting {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3.5px 5.6px;
+      gap: 3.5px;
+
+      width: max-content;
+      height: 23px;
+
+      background: #F7F8F9;
+      border-radius: 6px;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 9.5px;
+      line-height: 16px;
+
+      color: #64748B;
+    }
+  }
+}

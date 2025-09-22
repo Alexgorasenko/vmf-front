@@ -1,0 +1,52 @@
+.top-switch {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 44px;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--common-shadow);
+    align-items: center;
+    box-sizing: border-box;
+    padding: .35rem;
+    position: relative;
+    gap: .35rem;
+
+    .indicator {
+        position: absolute;
+        z-index: 0;
+        height: 38px;
+        background: var(--indigo-500);
+        transition: left .25s linear;
+        border-radius: .35rem;
+    }
+
+    .top-switch_option {
+        width: 100%;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        background: var(--indigo-50);
+        border-radius: .35rem;
+        transition: all .35s ease-in-out;
+        font-size: .85rem;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        color: var(--indigo-600);
+
+        .p-badge {
+            background: var(--indigo-100);
+            color: var(--indigo-400);
+            border-radius: 10px;   
+        }
+
+        &.active {
+            background: transparent;
+            color: var(--indigo-50);
+        }
+    }
+}

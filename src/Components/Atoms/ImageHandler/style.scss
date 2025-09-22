@@ -1,0 +1,39 @@
+#root canvas {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+}
+
+.crop-dialog {
+
+    .p-dialog {
+
+        .p-dialog-header {
+            display: none;
+        }
+
+        .p-dialog-content {
+            padding: 0;
+
+            .crop-preview {
+
+                img {
+                    max-height: 60vh;
+                }
+            }
+        }
+
+        .p-dialog-footer {
+            padding-bottom: .5rem;
+
+            .actions {
+                justify-content: center;
+                display: flex;
+
+                .btn-delete {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

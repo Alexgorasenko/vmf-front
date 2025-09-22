@@ -1,0 +1,26 @@
+@media screen and (max-width: 1680px) {
+    .topbar.desktop .container-header {
+        width: 70vw;
+    }
+
+    .layout-desktop .page .container {
+        max-width: 80vw;
+        padding-left: unset;
+        padding-right: unset;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .request-sidebar {
+        width: 1240px !important;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .layout-desktop .page .topbar {
+        margin-bottom: 10px;
+    }
+}

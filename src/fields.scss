@@ -1,0 +1,348 @@
+.switch-obj {
+    display: flex;
+    padding-top: 0.37rem;
+    padding-bottom: 0.75rem;
+    min-height: 2.12rem;
+    align-items: center;
+    white-space: nowrap;
+
+    .p-inputnumber {
+        width: 5.5rem;
+        margin-left: 1rem;
+
+        input {
+            width: 5.5rem;
+            height: 2.12rem;
+            font-size: 0.81rem;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .text {
+            opacity: .88;
+        }
+    }
+
+    .text {
+        font-size: 1rem;
+        transition: all .3s ease-in-out;
+        margin-left: 10px;
+
+        &.nm {
+            margin-left: 0;
+        }
+
+        .p-inputnumber {
+            width: 88px;
+            margin-left: 16px;
+
+            input {
+                width: 88px;
+                height: 34px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .p-inputswitch {
+        height: 1.5rem;
+        width: 2.75rem;
+
+        .p-inputswitch-slider {
+            &::before {
+                height: 1.25rem;
+                width: 1.25rem;
+                left: 0.125rem;
+            }
+        }
+
+        &.p-focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        &.p-inputswitch-checked {
+
+            .p-inputswitch-slider {
+                background: var(--blue-500);
+                box-shadow: none;
+                outline: none;
+
+                &::before {
+                    transform: translateX(1.18rem);
+                }
+            }
+        }
+    }
+}
+
+.fields-grid {
+    display: grid;
+    padding-top: 30px;
+
+    &.triple-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    &.double-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    &.np {
+        padding-top: 0;
+    }
+
+    .fields-group {
+        background: #fff;
+        position: relative;
+        border-radius: 12px;
+        padding: 2.5rem 1.12rem 0.37rem;
+        box-shadow: 1px 1px 20px rgb(99 102 241 / 10%);
+
+        &.pb {
+            padding-bottom: 12px;
+        }
+
+        .p-calendar, .p-inputtext {
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .p-button-sm {
+
+            &.compact {
+                font-size: 12px;
+                font-weight: normal;
+            }
+
+            &.p-button-warning {
+                background: var(--orange-50);
+                color: var(--orange-300);
+                border-color: var(--orange-100);
+            }
+
+            &.p-button-info {
+                background: var(--blue-50);
+                color: var(--blue-400);
+                border-color: var(--blue-100);
+            }
+        }
+
+        .geoSelect {
+            margin-bottom: 12px;
+
+            .p-dropdown {
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        label {
+            font-size: 0.75rem;
+            padding-left: 0.5rem;
+            color: var(--bluegray-500);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        &>.p-inputtext {
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        &.action-group {
+            .action-group-body {
+                min-height: 360px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .pi {
+                    font-size: 50px;
+                    color: var(--blue-200);
+                    margin-bottom: 60px;
+                }
+
+                .notice {
+                    padding: 0 40px 20px;
+                    text-align: center;
+                    color: var(--bluegray-400);
+                    font-size: 14px;
+                }
+
+                .p-button {
+                    background: var(--blue-50);
+                    color: var(--blue-500);
+                    border-color: var(--blue-100);
+                }
+            }
+        }
+
+        .p-tag.group-title {
+            background: var(--blue-500);
+            color: var(--blue-50);
+            border-color: var(--blue-500);
+            position: absolute;
+            top: -8px;
+            left: 12px;
+        }
+        .p-tag.removingBtn {
+            position: absolute;
+            top: -8px;
+            right: 12px;
+            cursor: pointer;
+        }
+        .switch-obj {
+            display: flex;
+            padding-top: 0.37rem;
+            padding-bottom: 0.75rem;
+            min-height: 2.12rem;
+            align-items: center;
+            white-space: nowrap;
+
+            .p-inputnumber {
+                width: 5.5rem;
+                margin-left: 1rem;
+
+                input {
+                    width: 5.5rem;
+                    height: 2.12rem;
+                    font-size: 0.81rem;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .text {
+                    opacity: .88;
+                }
+            }
+
+            .text {
+                font-size: 1rem;
+                transition: all .3s ease-in-out;
+                margin-left: 10px;
+
+                &.nm {
+                    margin-left: 0;
+                }
+
+                .p-inputnumber {
+                    width: 88px;
+                    margin-left: 16px;
+
+                    input {
+                        width: 88px;
+                        height: 34px;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .p-inputswitch {
+                height: 1.5rem;
+                width: 2.75rem;
+
+                .p-inputswitch-slider {
+                    &::before {
+                        height: 1.25rem;
+                        width: 1.25rem;
+                        left: 0.125rem;
+                    }
+                }
+
+                &.p-focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                &.p-inputswitch-checked {
+
+                    .p-inputswitch-slider {
+                        background: var(--blue-500);
+                        box-shadow: none;
+                        outline: none;
+
+                        &::before {
+                            transform: translateX(1.18rem);
+                        }
+                    }
+                }
+            }
+        }
+
+        .location-background {
+            margin-bottom: 40px;
+            position: unset;
+        }
+
+        .p-inputgroup.chips-container {
+
+            margin-bottom: 9px;
+            height: max-content;
+
+            .p-float-label {
+                width: calc(100% - 104px);
+            }
+
+            .p-inputgroup-addon {
+                width: 104px;
+                justify-content: flex-start;
+                padding-left: 8px;
+                box-sizing: border-box;
+                font-size: 13px;
+                background: var(--bluegray-50);
+                color: var(--bluegray-500);
+            }
+
+            ul.p-chips-multiple-container {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                padding-left: 6px;
+                grid-gap: 2px;
+
+                .p-chips-token {
+                    font-size: 12px;
+                    background: var(--blue-50);
+                    color: var(--blue-500);
+                }
+
+                .p-chips-input-token {
+                    max-width: 50px;
+                    font-size: 14px;
+                    flex: unset;
+                    height: 0;
+                    margin-top: -20px;
+
+                    &:focus-within {
+                        margin-top: 0;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+
+        .cancel-wrap {
+            width: 53px;
+            height: 53px;
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fefeff;
+            right: -10px;
+            bottom: -16px;
+        }
+    }
+}

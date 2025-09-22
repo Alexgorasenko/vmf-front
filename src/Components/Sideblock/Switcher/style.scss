@@ -1,0 +1,104 @@
+.switcher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.62rem;
+    transition: all 0.3s linear;
+
+    &.overriden {
+        position: fixed;
+        transform: translateX(calc(250px + ((100vw - 64px)/2)));
+        margin-top: -0.93rem;
+
+        .subject-toggler {
+
+            .subject-name {
+                display: none;
+            }
+        }
+
+        .subject-descriptor {
+            display: none;
+        }
+    }
+
+    .subject-toggler {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.78;
+        }
+    }
+
+    .subject-name {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.06rem;
+        line-height: 1.31rem;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #F7F7FE;
+        margin-top: 0.75rem;
+    }
+
+    .subject-descriptor {
+        font-weight: 300;
+        font-size: 0.87rem;
+        line-height: 1.06rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    .collapse-toggle {
+        color: var(--indigo-50);
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+    }
+
+    .emblem, .subject-name, .subject-descriptor {
+        opacity: 1;
+        visibility: visible;
+        max-height: unset;
+    }
+
+    .emblem {
+        transition: all 0.3s linear;
+    }
+
+    &.collapsed {
+        padding-left: 10px;
+
+        .emblem, .subject-name, .subject-descriptor {
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            margin-top: 0;
+        }
+
+        .emblem {
+            transition: all 0.3s linear;
+        }
+
+        .collapse-toggle {
+            color: var(--indigo-50);
+            max-height: unset;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s linear;
+
+            &:hover {
+                opacity: .68;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@import './medias.scss';

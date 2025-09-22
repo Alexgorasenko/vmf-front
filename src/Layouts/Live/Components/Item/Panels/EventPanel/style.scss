@@ -1,0 +1,72 @@
+.event-panel {
+
+    .panel-action {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .p-button {
+            width: 49% !important;
+        }
+
+        .p-button-info {
+            width: 100% !important;
+            margin-bottom: 8px;
+        }
+
+        .p-button:last-child {
+            margin-left: 2%;
+        }
+    }
+
+    .section-badge {
+        .p-badge.p-badge-info {
+            background: var(--blue-100);
+            color: var(--blue-500);
+        }
+    }
+
+    .p-badge.minute-badge {
+        background: var(--bluegray-100);
+        color: var(--bluegray-500);
+        margin-top: -5px;
+        margin-right: 6px;
+    }
+
+    .schemas-btns {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 12px 0 66px;
+
+        .p-button {
+            margin: 8px 4px;
+        }
+    }
+
+    .roster-squad {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+    }
+
+    .event-options {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 14px;
+
+        .field-radiobutton {
+            white-space: nowrap;
+        }
+
+        .p-radiobutton {
+            margin-right: 8px;
+
+            .p-highlight {
+                background-color: var(--blue-500) !important;
+                border-color: var(--blue-500) !important;
+            }
+        }
+    }
+}

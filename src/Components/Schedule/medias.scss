@@ -1,0 +1,36 @@
+@media screen and (max-width: 1440px) {
+
+    .schedule {
+        padding-top: 20px;
+
+        .content {
+            margin-top: 18px;
+
+            .nav-full {
+                margin-bottom: 0 !important;
+            }
+
+            .nav .over-list > div.stage-progress {
+                width: 37%;
+
+                span {
+                    white-space: nowrap;
+                    font-size: 9px;
+                }
+            }
+
+            .nav .over-list > div.custom-input {
+                width: 60%;
+            }
+
+            .schedule-list {
+                margin-top: 8px;
+
+
+                .tour-shadow-container {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

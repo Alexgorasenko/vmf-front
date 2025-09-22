@@ -1,0 +1,76 @@
+.previews-item {
+    width: 120px;
+    aspect-ratio: 16 / 9;
+    background: var(--bluegray-50);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        opacity: .75;
+    }
+
+    .p-tag {
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        padding: 3px 9px;
+        font-size: 10px;
+    }
+
+    &.photo {
+        .p-tag {
+            background: var(--blue-500);
+            color: var(--blue-50);
+        }
+    }
+
+    &.video {
+        .p-tag {
+            background: var(--orange-500);
+            color: var(--orange-50);
+        }
+    }
+
+    .select-control {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, #21212125, #21212165);
+        transition: all .4s ease-in-out;
+        z-index: 2;
+
+        &:hover {
+            cursor: pointer;
+            opacity: .75;
+        }
+
+        .pi {
+            font-size: 20px;
+            color: var(--red-500);
+            transition: all .4s ease-in-out;
+            background: #ffffff;
+            border-radius: 50%;
+            padding: 3px;
+        }
+
+        &.active {
+
+            .pi {
+                color: var(--green-500);
+            }
+        }
+    }
+}

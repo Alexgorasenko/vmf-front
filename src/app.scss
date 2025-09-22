@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #F5F5FD 0%, #FFFFFF 69.79%);
+    font-family: 'Inter', sans-serif;
+
+    h5 {
+        font-weight: 600;
+        font-size: 17.5px;
+        line-height: 21px;
+        color: #495057;
+        margin: 16px 0;
+    }
+
+    .p-button-icon-only {
+
+        .p-button-label {
+            display: none;
+        }
+    }
+
+    .p-button:focus {
+        box-shadow: none !important;
+    }
+
+    .p-sidebar-header {
+        z-index: 2;
+        position: relative;
+    }
+
+    .ripple {
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: '';
+            background-position: center;
+            transition: background 1.2s;
+        }
+
+        &:hover {
+            &::after {
+                background: rgba(255, 255, 255, .03) radial-gradient(circle, transparent 1%, rgba(255, 255, 255, .05) 1%) center/15000%;
+            }
+        }
+
+        &:active {
+            &::after {
+                background-color: rgba(255, 255, 255, .05);
+                background-size: 100%;
+                transition: background 0s;
+            }
+        }
+    }
+
+    .num-input {
+        display: flex;
+        align-items: center;
+
+        .p-inputnumber {
+            height: 36px;
+
+            .p-button {
+                background-color: #E9ECEF;
+                border-color: #CED4DA;
+                color: #6C757D;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            color: var(--bluegray-600);
+            margin-left: 14px;
+        }
+
+        input {
+            text-align: center;
+        }
+    }
+    // .p-dialog{
+    //     width: 1048px;
+    //     height: 964px;
+    // }
+
+    .p-menuitem .emblem {
+        margin-right: 8px;
+    }
+
+    .p-confirm-dialog-message {
+        li {
+            margin-bottom: 8px;
+            padding-right: 50px;
+        }
+    }
+
+    .p-button.p-button-success.p-button-text:enabled {
+        background: rgba(34, 197, 94, 0.04);
+        border-color: transparent;
+        color: #22C55E;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .p-buttonset, .p-button-pseudo-set {
+        box-shadow: 1px 1px 30px rgba(59, 130, 246, .35);
+        border: none;
+        overflow: hidden;
+        border-radius: 15px;
+
+        .p-button-sm {
+            border: none !important;
+            padding: .5rem .75rem !important;
+
+            .p-button-label {
+                font-size: .8rem;
+                font-weight: 600;
+            }
+
+            &.p-button-outlined {
+                background: #fff;
+            }
+        }
+    }
+
+    .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+        font-size: .9rem;
+        padding: 0.75rem .9rem;
+    }
+
+    .p-autocomplete-input-token {
+        padding: 0 !important;
+    }
+
+    .custom-tabs {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+        .custom-tabs_btn {
+            padding: 0.6875rem 0.8rem;
+            background: var(--indigo-50);
+            // border: 2px solid var(--indigo-300);
+            color: var(--indigo-500);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            margin: 0 0.7rem;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: all 0.4s ease-in-out;
+            box-shadow: 1px 1px 10px rgba(99, 102, 241, .1);
+
+            i {
+                margin-right: 0.37rem;
+                font-size: 0.85rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .92;
+                box-shadow: none;
+            }
+
+            &.active {
+                background: var(--indigo-500);
+                color: var(--indigo-50);
+                border-color: var(--indigo-600);
+                box-shadow: 1px 1px 30px rgba(99, 102, 241, .4);
+            }
+        }
+    }
+
+    .p-inputgroup.am {
+
+        .p-inputgroup-addon, .p-inputtext {
+            font-size: .8rem;
+            padding: .6rem;
+        }
+    }
+}
+
+@import './fields.scss';
+@import './dialogs.scss';
+@import './medias.scss';

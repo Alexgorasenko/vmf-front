@@ -1,0 +1,149 @@
+.structure {
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .spinner {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .structure-body {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-right: 200px;
+        padding-bottom: 100px;
+
+        @media screen and (max-width: 1440px) {
+            padding-right: 0;
+        }
+
+        .p-organizationchart {
+            width: 100%;
+
+            .p-organizationchart-table, tbody {
+
+                &>tr>td {
+                    padding: 0 12px;
+                }
+            }
+
+            .p-organizationchart-nodes[style*="visibility: hidden"] {
+
+                .p-organizationchart-table {
+                    display: none;
+                }
+            }
+
+            .p-organizationchart-lines[style*="visibility: hidden"] {
+                display: none;
+            }
+
+            .p-node-toggler {
+                display: none;
+            }
+
+            .p-organizationchart-node-content {
+                border-radius: 25px;
+                border-color: var(--indigo-50);
+                box-shadow: 1px 1px 30px rgb(99 102 241 / 10%);
+                font-size: 0.875rem;
+                transition: all 0.3s ease-in-out;
+                padding: 0;
+
+                .p-node-toggler:focus {
+                    box-shadow: none;
+                }
+
+                &:hover {
+                    background: var(--indigo-50);
+                }
+
+                &>div {
+
+                    &>div {
+                        position: relative;
+                        padding: 9px 14px 10px;
+                        border-radius: 25px;
+                        transition: all 0.3s ease-in-out;
+
+                        &.selected {
+                            background: var(--indigo-50);
+                            border: 1px solid var(--indigo-100);
+                            color: var(--indigo-500);
+                        }
+
+                        &.create-trigger {
+                            background: var(--blue-50);
+                            color: var(--blue-500);
+                            border: 1px solid var(--blue-100);
+                            white-space: nowrap;
+
+                            .pi {
+                                position: absolute;
+                                bottom: -8px;
+                                left: calc((100% - 16px)/2);
+                                background: var(--blue-50);
+                            }
+                        }
+
+                        &.finish-trigger {
+                            background: var(--red-50);
+                            color: var(--red-400);
+                            border: 1px solid var(--red-100);
+                            white-space: nowrap;
+
+                            .pi {
+                                position: absolute;
+                                bottom: -8px;
+                                left: calc((100% - 16px)/2);
+                                background: var(--red-50);
+                            }
+                        }
+
+                        &.node {
+                            display: flex;
+                            white-space: nowrap;
+
+                            .pi {
+                                // position: absolute;
+                                // bottom: -8px;
+                                left: calc((100% - 16px)/2);
+                                //background: var(--red-100);
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                margin-left: 8px;
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.create-dialog {
+    .p-dialog-content {
+        .control {
+            .p-inputtext {
+                width: 100%;
+            }
+        }
+    }
+    .p-dialog-footer {
+        .create-form_actions {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+    }
+}

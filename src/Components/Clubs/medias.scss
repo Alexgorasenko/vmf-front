@@ -1,0 +1,255 @@
+@media screen and (max-width: 1680px) {
+    .clubs {
+        width: 1180px;
+
+        .content.within-list {
+            margin-top: 0;
+            width: 75vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .clubs {
+        width: 1080px;
+
+        .content.within-list {
+            margin-top: 0;
+            width: 1080px;
+
+            .settings {
+                margin: 20px 0 0;
+            }
+
+            .teams {
+                margin: 20px 0 0;
+            }
+        }
+
+        .clubs-list {
+
+            .splide__track {
+                padding-top: 10px !important;
+                padding-left: 0 !important;
+            }
+
+            .splide__arrows {
+                left: -50px;
+                top: 70px;
+            }
+
+            .club {
+
+                .icon {
+                    margin-top: 16px;
+                    width: 34px;
+                    height: 34px;
+                }
+
+                .name {
+
+                    .title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .clubs {
+        width: 1020px;
+
+        .content.within-list {
+            width: 77vw;
+        }
+
+        .clubs-list {
+
+            .splide__track {
+                padding-bottom: 10px !important;
+            }
+
+            .splide__arrows {
+                width: 78vw;
+                left: -25px;
+                top: 45px;
+            }
+
+            .club {
+                flex-direction: row;
+                justify-content: flex-start;
+
+                .icon {
+                    margin-top: 0;
+                }
+
+                .name {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .emb-loader {
+
+            .emb-content {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clubs {
+        width: 100%;
+        padding: 0 14px;
+
+        .content.within-list {
+            width: 100%;
+
+            .settings {
+                width: 100%;
+
+                .fields-grid {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .teams {
+                flex-direction: column;
+
+                .teams-content {
+                    width: 100%;
+                    min-height: unset;
+                    margin-bottom: 24px;
+
+                    .p-inputgroup {
+                        width: 100%;
+
+                        button.p-button {
+                            background: var(--indigo-50);
+                            color: var(--indigo-500);
+                            border-color: var(--indigo-100);
+                            width: 60px;
+                        }
+                    }
+                }
+
+                .team-data {
+                    margin: 0;
+                    width: 100%;
+                    flex-wrap: wrap;
+
+                    .fields-grid {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .list {
+                margin: 14px 0 0;
+                flex-direction: column;
+
+                .list-content {
+                    min-height: unset;
+                    width: 100%;
+
+                    .p-inputgroup {
+
+                        button.p-button {
+                            background: var(--indigo-50);
+                            color: var(--indigo-500);
+                            border-color: var(--indigo-100);
+                            width: 60px;
+                        }
+                    }
+                }
+
+                .fields-grid {
+                    width: 100%;
+                    margin: 20px 0 0 !important;
+                    min-height: unset;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .clubs-list {
+
+            .splide {
+                width: 100%;
+
+                .splide__track {
+                    width: 100%;
+
+                    .splide__slide {
+                        width: 170px !important;
+                        margin-right: 12px !important;
+
+                        .club {
+                            width: 100%;
+                            align-items: center;
+
+                            .icon {
+                                width: 28px;
+                                height: 28px;
+                                margin-left: 12px;
+                            }
+
+                            .name {
+                                text-align: left;
+                                padding-bottom: 0;
+                                height: 60px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                margin: 0;
+                                overflow: hidden;
+
+                                .title {
+                                    font-size: 12px;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .splide__arrows {
+                    width: 100vw;
+
+                    .splide__arrow--next {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+
+        .clubs-query {
+
+            .clubs-actions {
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+
+                input {
+                    text-align: center;
+                    margin-bottom: 12px;
+                }
+
+                .p-button {
+                    justify-content: center;
+
+                    .p-button-label {
+                        flex: unset;
+                    }
+                }
+            }
+        }
+    }
+}

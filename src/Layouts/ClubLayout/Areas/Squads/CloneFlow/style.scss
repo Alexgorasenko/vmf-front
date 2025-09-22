@@ -1,0 +1,129 @@
+.clone-flow-mask {
+
+    .p-sidebar {
+        padding-bottom: 4rem;
+    }
+}
+
+.clone-flow {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .actions {
+        position: fixed;
+        bottom: 1rem;
+        display: flex;
+        right: 1rem;
+        left: 1rem;
+        gap: .75rem;
+
+        .p-button {
+            width: 100%;
+
+            &.back-btn {
+                background-color: var(--gray-100);
+                border-color: var(--gray-100);
+                color: var(--gray-500);
+            }
+
+            &.add-players {
+                background: var(--action-grd);
+                border-color: var(--yellow-400);
+                color: var(--gray-900);
+
+                span {
+                    font-size: .8rem;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .options-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: .75rem;
+        padding-top: .75rem;
+
+        .options-title {
+            padding-left: .75rem;
+        }
+
+        .option {
+            background: #fff;
+            border-radius: .5rem;
+            box-shadow: var(--common-shadow);
+            box-sizing: border-box;
+            padding: 1.25rem .75rem .5rem;
+            display: flex;
+            position: relative;
+
+            &.player-option {
+                padding: .75rem;
+
+                &.included {
+                    opacity: .75;
+                }
+
+                .current-status {
+                    position: absolute;
+                    left: 50px;
+                    width: 40%;
+                    top: 0;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .p-checkbox {
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                }
+
+                .p-checkbox-box.p-highlight {
+                    background: var(--action-grd);
+                    border-color: var(--yellow-400);
+
+                    .p-checkbox-box.p-highlight {
+                        color: var(--gray-900);
+                    }
+                }
+            }
+
+            .players-qty {
+                position: absolute;
+                background: var(--action-grd);
+                top: -.3rem;
+                left: .5rem;
+
+                span {
+                    color: var(--gray-900);
+                }
+            }
+
+            &>div {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+
+                &:last-child {
+                    align-items: flex-end;
+                }
+
+                label {
+                    font-size: .75rem;
+                    opacity: .75;
+                    margin-bottom: .2rem;
+                }
+            }
+        }
+    }
+}

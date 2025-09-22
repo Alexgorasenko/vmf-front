@@ -1,0 +1,247 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+
+  .modal-dialog {
+    width: 600px;
+    min-height: 418px;
+
+    .emblem-wrap {
+        padding: 10px;
+        background: #FFFFFF;
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px rgb(59 130 246 / 10%);
+        position: relative;
+        //margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-background {
+      margin-top: -62px;
+      width: 600px;
+      min-height: 400px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .notice {
+          margin-bottom: 60px;
+          font-size: 14px;
+          color: var(--bluegray-600);
+          text-align: center;
+
+          span {
+              display: block;
+          }
+      }
+
+      .text {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        margin: 81px 65px 32px 66px;
+        width: 469px;
+        height: 54px;
+
+        text-align: center;
+
+        color: #37404C;
+      }
+
+      .actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 105px 51px 72px;
+        width: 423px;
+
+        .action {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 14px;
+
+          .p-radiobutton .p-radiobutton-box.p-highlight {
+            border-color: #3B82F6;
+            background: #3B82F6;
+          }
+
+          .label {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+
+            color: #495057;
+
+            margin: 0 0 0 9px;
+          }
+
+          label {
+
+              &:hover {
+                  cursor: pointer;
+              }
+          }
+
+          .p-tag {
+              font-size: .7rem;
+              background: var(--bluegray-50);
+              border: 1px solid var(--bluegray-100);
+              color: var(--bluegray-400);
+              margin-left: 4px;
+              padding: 3px 5px;
+              position: absolute;
+              margin-top: 1px;
+
+              span {
+                  line-height: 1;
+              }
+          }
+        }
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 430px;
+        .button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8.5px 17.5px;
+            width: 204px;
+            height: 38px;
+
+            background: #3B82F6;
+
+            border: 1px solid #3B82F6;
+            border-radius: 6px;
+
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+
+            margin-bottom: 14px;
+        }
+        .button-sub {
+
+        }
+
+        .button-escape {
+            background: rgba(100, 116, 139, 0.04);
+            border: rgba(100, 116, 139, 0.04);
+            color: #64748B;
+        }
+      }
+    }
+    &.hasList {
+        min-height: 700px;
+        .modal-background {
+            min-height: 700px;
+            .text {
+                margin: 65px 65px 12px 66px;
+            }
+
+            .actions {
+              margin: 0 105px 21px 72px;
+            }
+            .list-stash {
+                //margin-top: -24px;
+                width: 100%;
+                padding: 0 50px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+                max-height: 60vh;
+                overflow-y: auto;
+                // display: flex;
+                // flex-direction:
+                .list-stash_item {
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.35s ease-in-out;
+                    position: relative;
+
+                    .p-button-sm {
+                        position: absolute;
+                        right: .5rem;
+                        font-size: .65rem;
+                        padding: .2rem .5rem;
+                        font-weight: normal;
+                        background: var(--red-400);
+                        color: var(--red-50);
+                        border: 1px solid var(--red-500);
+                    }
+
+                    &:nth-child(even) {
+                        background: var(--indigo-50);
+                    }
+
+                    label {
+                        margin-left: 0;
+                        //min-width: 300px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .7;
+                    }
+                    .number {
+                      width: 70px;
+                      height: 20px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      grid-gap: 10px;
+
+                      background: #F5F9FF;
+
+                      .icon {
+                        width: 20px;
+                        height: 20px;
+                        padding-left: 10px;
+                        img {
+                          //margin: 20px;
+                          width: 20px;
+                          height: 20px;
+                        }
+                      }
+                    }
+                }
+            }
+            .button-cleare {
+                margin: 0 auto;
+            }
+        }
+    }
+  }
+}

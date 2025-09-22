@@ -1,0 +1,98 @@
+.layout-tablet {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.3s linear;
+    padding-left: 260px;
+
+    .aside {
+        width: 260px;
+        height: 100vh;
+        background-color: var(--indigo-900);
+        transition: all 0.3s linear;
+        position: absolute;
+        left: 0;
+        transform-origin: top left;
+    }
+
+    &.collapsed {
+        padding-left: 67px;
+
+        .aside {
+            transform: translateX(-193px);
+        }
+    }
+
+    .page {
+        width: 100%;
+        transition: all 0.3s linear;
+
+        .topbar {
+            height: 67px;
+            background: #fff;
+            box-shadow: 0px 1px 0px #DEE2E6;
+            margin-bottom: 18px;
+
+            .container {
+                height: 67px;
+            }
+        }
+
+        .container {
+            height: calc(100vh - 85px);
+            border-bottom: none;
+            position: relative;
+            margin: 0 20px;
+            max-width: 860px;
+
+            @media screen and (min-width: 1200px) {
+                max-width: 880px;
+            }
+
+            @media screen and (min-width: 1366px) {
+                max-width: 980px;
+            }
+
+            @media screen and (min-width: 1440px) {
+                max-width: 1080px;
+            }
+
+            @media screen and (min-width: 1600px) {
+                max-width: 1280px;
+            }
+
+            .container-grid {
+                transition: all 0.3s linear;
+                display: grid;
+                grid-template-columns: 1fr 0fr;
+                grid-gap: 20px;
+
+                .side {
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+
+    &.collapsed {
+
+        .page {
+
+            .container {
+
+                .container-grid {
+                    transition: all 0.3s linear;
+                    grid-template-columns: 6fr 2.8fr;
+
+                    .side {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: all 0.25s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

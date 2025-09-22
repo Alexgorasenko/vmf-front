@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+    .tournaments {
+
+        .content.within-list {
+
+            .calendar {
+
+                .model {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 16px 14px;
+
+                    .calendar-card {
+                        width: 100%;
+
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.p-sidebar-mask.club-squad {
+
+    .p-sidebar {
+        width: 100% !important;
+        background: linear-gradient(180deg, #F5F5FD 0%, #FFFFFF 69.79%);
+
+        .p-sidebar-header {
+            display: none;
+        }
+
+        .p-sidebar-content {
+            padding: .75rem;
+
+            .squad-buttons {
+                margin: .75rem .1rem;
+                display: flex;
+                gap: .5rem;
+
+                .p-button {
+                    width: 100%;
+                    padding: .6rem 1rem;
+                    transition: width .3s linear;
+
+                    span {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.club-squads {
+    padding: .75rem 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    .club-squads_list {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 1rem;
+        gap: .75rem;
+    }
+}
+
+.squad-item {
+    background: #fff;
+    box-shadow: var(--common-shadow);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    padding: .75rem;
+    position: relative;
+
+    .create-trigger {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        position: absolute;
+        right: .75rem;
+        top: .75rem;
+        font-size: .75rem;
+        font-weight: 600;
+        color: var(--indigo-600);
+
+        &._clone {
+            top: 2.6rem;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 1rem;
+    }
+
+    .tour {
+        font-size: .9rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+
+        span:nth-child(2) {
+            opacity: .65;
+            margin-left: .25rem;
+        }
+    }
+
+    .p-chip {
+        background: var(--blue-100);
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+
+        .p-chip-text {
+            margin: .25rem 0;
+            font-size: .8rem;
+        }
+    }
+
+    .qtys {
+        display: flex;
+        margin-top: 1rem;
+
+        &>div {
+            width: 33.3%;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: 1.4rem;
+                color: var(--gray-800);
+                font-weight: 700;
+            }
+
+            b {
+                font-size: .75rem;
+                font-weight: 500;
+                opacity: .55;
+            }
+        }
+    }
+}

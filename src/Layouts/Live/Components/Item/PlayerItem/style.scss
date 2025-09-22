@@ -1,0 +1,157 @@
+.player-control {
+    background: var(--surface-hover);
+    border-radius: 6px;
+    padding: 6px;
+    border: 1px solid var(--surface-ground);
+    display: flex;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+
+    .p-inputnumber {
+        width: 30px;
+        height: 30px;
+
+        input {
+            flex: unset;
+            width: 30px;
+            height: 30px;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .75rem;
+            text-align: center;
+        }
+    }
+
+    .p-badge {
+        position: absolute;
+        right: 12px;
+        top: -12px;
+        font-size: 11px;
+        padding: 3px 6px;
+        line-height: 14px;
+        height: auto;
+
+        &.disq {
+            font-size: 10px;
+            right: 2px;
+            top: -6px;
+        }
+    }
+
+    .num {
+        width: 30px;
+        height: 30px;
+        background: var(--surface-border);
+        border-radius: 6px;
+        color: var(--speedDialActionBg);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        z-index: 2;
+    }
+
+    .info {
+        width: calc(100% - 30px);
+        box-sizing: border-box;
+        padding-left: 10px;
+        color: var(--text-color);
+        height: 100%;
+
+        .primary {
+            padding-top: 3px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+        }
+
+        .secondary {
+            font-size: 10px;
+        }
+    }
+
+    &.in-roster {
+        background-color: var(--blue-100);
+        border-color: var(--blue-200);
+
+        .num {
+            background-color: var(--blue-200);
+            color: var(--blue-600);
+        }
+
+        &.is-double {
+          .num {
+            background-color: var(--red-200);
+            color: var(--red-600);
+          }
+        }
+    }
+}
+
+.num-dialog-wrap {
+    .p-dialog-content {
+        padding-bottom: 0 !important;
+    }
+
+    .num-dialog {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+
+        form {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        label {
+            width: 50%;
+            color: var(--bluegray-500);
+        }
+
+        .p-inputwrapper {
+            width: 50%;
+
+            input {
+                width: 100%;
+                padding: 0;
+                height: 44px;
+                font-size: 20px;
+                line-height: 44px;
+                text-align: center;
+            }
+
+            .p-inputtext:enabled:focus {
+                border-color: transparent;
+                box-shadow: 1px 1px 25px rgba(59, 130, 246, 0.15);
+            }
+        }
+    }
+
+    .p-dialog-footer {
+        padding: 0 1.5rem !important;
+
+        .num-dialog-actions {
+            padding: 14px 0;
+            display: flex;
+            justify-content: center;
+
+            .p-button {
+                padding: 8px 15px;
+                margin-right: 0;
+                margin-left: 10px;
+
+                &.p-button-secondary {
+                    background: var(--bluegray-50);
+                    color: var(--bluegray-500);
+                    border-color: var(--bluegray-50);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    .staff {
+        .toolbar {
+            padding: 0 14px;
+
+            .p-buttonset {
+
+                button {
+                    width: 33.3%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .mean {
+
+            .staff-grid {
+                display: flex;
+                flex-direction: column;
+                grid-gap: 0;
+                padding: 0 14px;
+
+                .person-item {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}

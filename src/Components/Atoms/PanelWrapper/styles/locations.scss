@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+    .location-panel {
+
+        .p-sidebar {
+
+            .side-notes {
+                width: 100%;
+
+                .image {
+                    position: relative;
+                    top: unset;
+                    margin-top: 20px;
+                }
+
+                .text-group {
+                    background: transparent;
+                    width: 100%;
+                    padding: 0 14px 40px;
+
+                    .actions {
+                        margin-top: 40px;
+                        width: 100%;
+
+                        .p-button {
+                            width: 100%;
+                            background: var(--indigo-50);
+                            border: 1px solid var(--indigo-100);
+                            color: var(--indigo-500);
+
+                            .pi {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

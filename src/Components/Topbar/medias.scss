@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+    .mobile-topbar {
+        height: 58px;
+        background: #fff;
+        box-shadow: 0px 1px 0px #DEE2E6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+        justify-content: space-between;
+        z-index: 9;
+
+        .dd-wrap {
+            box-sizing: border-box;
+            border-left: 1px solid var(--indigo-100);
+            border-right: 1px solid var(--indigo-100);
+            width: calc(100% - 120px);
+
+            .title {
+                padding-left: 18px;
+                font-size: 11px;
+                font-weight: normal;
+                color: var(--bluegray-700);
+                padding-top: 7px;
+            }
+
+            .p-dropdown {
+                width: calc(100% - 10px);
+                border: none;
+                margin-left: 7px;
+
+                &>* {
+                    font-size: 13px;
+
+                    &.p-dropdown-trigger {
+                        width: 30px;
+                        margin-right: 10px;
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+
+                    &.p-dropdown-label {
+                        padding: 6px 10px;
+                    }
+                }
+
+                &.p-inputwrapper-focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

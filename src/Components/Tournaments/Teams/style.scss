@@ -1,0 +1,166 @@
+.tournament-teams {
+    margin-top: 20px;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+
+    .slidemenu {
+      position:absolute;
+      z-index: 1;
+      left: 33px;
+      top: 294px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+
+      width: 388px;
+      height: 220px;
+
+      margin-top: 4px;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3.5px 0px;
+
+        width: 377px;
+        height: auto;
+
+        background: #FFFFFF;
+
+        border: 1px solid #DEE2E6;
+        border-radius: 6px;
+
+        .menu-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10.5px 17.5px;
+
+          width: 377px;
+          height: 51px;
+
+          .icon {
+            width: 21.13px;
+            height: 30px;
+            margin-right: 7px;
+          }
+
+          .text {
+            width: 313.87px;
+            height: 14px;
+          }
+        }
+
+        .menu-item:hover {
+          background: #F6F9FC;
+        }
+      }
+    }
+
+    .text {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.31rem;
+
+      color: #495057;
+
+      margin-bottom: 0.87rem;
+    }
+
+    .p-inputtext {
+      padding: 0.62rem;
+
+      width: 390px;
+      height: 2.7rem;
+    }
+  }
+
+  .teams-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 71vw;
+
+    .delete-team {
+      position: relative;
+      height: 10px;
+      width: 10px;
+      right: 36px;
+      top: 10px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: rgba(59, 130, 246, 0.5);
+
+      &:hover {
+        color: #3B82F6;
+      }
+    }
+
+    .team {
+      width: 240px;
+      height: 100px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(59, 130, 246, 0.1);
+      border-radius: 15px;
+      margin: 0 12px 9px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 28px 17px 28px 17px;
+
+      .text-area {
+        display: flex;
+        flex-direction: column;
+        margin: 0 8px 0 12px;
+
+        .text {
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+
+          color: #37404C;
+        }
+
+        .tag {
+          width: auto;
+          margin-top: 3px;
+          background: #F5F9FF;
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 16px;
+
+          white-space: nowrap;
+
+          color: #3B82F6;
+        }
+
+        .tag-grey {
+          width: auto;
+          margin-top: 3px;
+          background: #F7F8F9;;
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10.5px;
+          line-height: 16px;
+
+          color: #64748B;;
+        }
+      }
+    }
+  }
+}
+
+@import './medias.scss';

@@ -1,0 +1,49 @@
+.roster-panel {
+
+    .roster-squad {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+        margin-bottom: 70px;
+    }
+
+    .panel-title {
+        position: relative;
+        max-width: 75vw;
+        display: block !important;
+
+        .p-badge {
+            background: var(--green-100);
+            color: var(--green-700);
+            margin-left: 6px;
+            position: absolute;
+            margin-top: -7px;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+    }
+
+    .p-button.sibling-toggle {
+        background: var(--indigo-100);
+        border: 1px solid var(--indigo-200);
+        color: var(--indigo-500);
+        font-size: .8rem;
+    }
+}
+
+#sibling_menu {
+
+    .p-menuitem  {
+        border-bottom: 1px solid var(--blue-50);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .p-menuitem-link {
+            padding: .65rem 1rem;
+            font-size: .9rem;
+        }
+    }
+}

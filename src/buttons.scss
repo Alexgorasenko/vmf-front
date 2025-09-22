@@ -1,0 +1,59 @@
+.btn-create {
+  background: var(--indigo-50) !important;
+  border: 1px solid var(--indigo-100) !important;
+  color: var(--indigo-400) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--indigo-400) !important;
+  }
+}
+
+.btn-save {
+  background: var(--green-50) !important;
+  border: 1px solid var(--green-100) !important;
+  color: var(--green-400) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--green-400) !important;
+  }
+}
+
+.btn-warning {
+  background: var(--orange-50) !important;
+  border: 1px solid var(--orange-100) !important;
+  color: var(--orange-400) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--orange-400) !important;
+  }
+}
+
+.btn-delete {
+  background: var(--red-50) !important;
+  border: 1px solid var(--red-100) !important;
+  color: var(--red-400) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--red-400) !important;
+  }
+}
+
+.btn-default {
+  background: var(--bluegray-50) !important;
+  border: 1px solid var(--bluegray-100) !important;
+  color: var(--bluegray-400) !important;
+  font-size: 1rem;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid var(--bluegray-400) !important;
+  }
+}

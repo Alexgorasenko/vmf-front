@@ -1,0 +1,386 @@
+.disquals__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 10px;
+}
+.disquals {
+    display: flex;
+    flex-direction: column;
+}
+.disqual-info {
+    width: 100%;
+}
+.disqual-load {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disqual-filters {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 73vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    white-space: nowrap;
+    .filter_btns {
+        width: calc((43% - 44px)*2/3);
+        border-radius: 30px;
+        background-color: #E9ECEF;
+        // margin-left: 24px;
+        // margin-right: 20px;
+    }
+    .filter {
+        transition: all .4s ease-in-out;
+        text-align: center;
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 0.87rem;
+        line-height: 1.62rem;
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: rgba(0, 123, 255, 1);
+
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+    .filter_text {
+        border-radius: 6px;
+        width: 36vw;
+        font-size: 1rem;
+        line-height: 1.31rem;
+        color: #B9BBBE;
+        margin-right: 0;
+    }
+    .add_btn {
+        background-color: #17C671;
+        color: #ffffff;
+        width: calc((43% - 44px)/3);
+        //width: 10%; // calc((43% - 44px)*2/3);
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        border-radius: 30px;
+        font-size: 0.87rem;
+        line-height: 1.62rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+.disquals_label {
+    margin-bottom: 0.5rem;
+}
+
+.disqual-list {
+    display: flex;
+    flex-direction: column;
+    //flex-wrap: wrap;
+    //overflow-y: scroll;
+    //min-height: 400px;
+    overflow-y: auto;
+}
+.disqual__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 30px 11px;
+    margin-bottom: 12px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(90, 97, 105, 0.11), 0px 4px 8px rgba(90, 97, 105, 0.12);
+    border-radius: 12px;
+    // span {
+    //     display: inline-block;
+    // }
+    .disqual__card {
+        width: 40px;
+        height: 40px;
+        background-image: url('./yellow_card.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        display: inline-block;
+        &.isManual {
+            background: none;
+            content: '';
+        }
+        .yellow_count {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 10px;
+            line-height: 12px;
+            padding: 4px;
+            text-align: center;
+            color: #2A2F35;
+            background: linear-gradient(90deg, #F4F5FF 0%, #FBFBFF 90.33%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            z-index: 1;
+        }
+    }
+    &.isRedCard {
+        .disqual__card {
+            background-image: url('./red_card.png');
+        }
+    }
+    .disqual__info {
+        display: flex;
+        flex-wrap: nowrap;
+        //justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+    .disqual__player {
+        text-align: left;
+        margin-left: 2rem;
+        width: 43%;
+        margin-right: 0;
+        white-space: nowrap;
+    }
+    .disqual__player--name {
+        padding: 0px 9px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px
+    }
+    .disqual__club {
+        padding: 0px 9px;
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+    .disqual__tournament {
+        background: linear-gradient(90deg, #F4F5FF 0%, #FBFBFF 90.33%);
+        border-radius: 4px;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 3px 9px;
+        display: inline-flex;
+    }
+    .disqual__start {
+        background: linear-gradient(90deg, #F4F5FF 0%, #FBFBFF 90.33%);
+        border-radius: 4px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        padding: 3px 9px;
+        white-space: nowrap;
+        margin-left: 0.5rem;
+    }
+    .disqual__count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+        span {
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+
+        }
+        span:first-child {
+            padding: 10px 0;
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 700;
+            border: 1px solid #F5F6FF;
+            border-radius: 12px;
+            width: 44px;
+        }
+        &.disqual__rest {
+            span:first-child {
+                background: linear-gradient(90deg, #F4F5FF 0%, #FBFBFF 90.33%);
+                border: none;
+            }
+        }
+    }
+
+    .disqual__opt {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 44%;
+
+        .disqual__comment {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            span {
+                font-size: 11px;
+                line-height: 14px;
+                color: #5A6169;
+                text-align: left;
+            }
+            span:first-child {
+                font-size: 12px;
+                line-height: 16px;
+                color: #2A2F35;
+            }
+        }
+        .disqual__act {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 22%;
+            .btn {
+                font-size: 1.5rem;
+                background: linear-gradient(90deg, #F4F5FF 0%, #FBFBFF 90.33%);
+                padding: 9px;
+                border-radius: 12px;
+                width: 45%;
+
+            }
+        }
+    }
+}
+
+.disqual-squad {
+    margin-top: 10px;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 10px;
+
+    .input {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 10.5px;
+      grid-gap: 14px;
+
+      width: 390px;
+      height: 42px;
+
+      background: #FFFFFF;
+
+      border: 1px solid #CED4DA;
+      border-radius: 6px;
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+}
+
+.disqual-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+
+    .switch-obj {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 74px 20px 0;
+        width: 334px;
+
+        .p-inputnumber {
+
+            .p-inputnumber-input {
+                width: 82px;
+                height: 42px;
+
+                background: #FFFFFF;
+
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17.5px;
+                line-height: 21px;
+
+                text-align: center;
+
+                color: #465161;
+            }
+        }
+
+        .p-inputswitch-checked {
+            .p-inputswitch-slider {
+                background: #3B82F6 !important;
+            }
+        }
+    }
+
+    .disqual-modal-dialog {
+        width: 600px;
+        height: 600px;
+
+        .modal-background {
+            width: 100%;
+            min-height: 400px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 20px;
+
+            .disqual-player {
+                width: 100%;
+
+                .p-input-icon-right {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .p-dropdown {
+                    width: 100%;
+                }
+            }
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            //justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 1rem;
+            gap: 1rem;
+
+            .p-button-sm {
+                width: 50%;
+                margin: 0 !important;
+            }
+        }
+    }
+    .p-dropdown.p-component {
+        width: 80%;
+    }
+}

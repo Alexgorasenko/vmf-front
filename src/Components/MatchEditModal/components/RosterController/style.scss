@@ -1,0 +1,812 @@
+.block-hint {
+    text-align: center;
+    font-size: .8rem;
+    padding: .6rem 10rem;
+    color: var(--indigo-900);
+    opacity: .5;
+    border-bottom: 1px solid var(--indigo-100);
+}
+
+.p-menuitem {
+    border-bottom: 1px solid var(--indigo-50);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    a {
+        font-size: .8rem;
+        padding: .5rem 1rem;
+    }
+}
+
+.compound__block{
+    margin-top: 32px;
+    display: flex;
+    height: calc(86vh - 200px);
+    justify-content: space-between;
+
+    .block-title {
+        position: absolute;
+        top: -12px;
+        text-align: center;
+        left: 0;
+        right: 0;
+
+        span {
+            font-size: .85rem;
+            background: var(--indigo-50);
+            padding: .3rem 1rem;
+            border-radius: 1rem;
+            border: 1px solid var(--indigo-100);
+            color: var(--indigo-900);
+            box-shadow: 1px 2px 12px rgba(99, 102, 241, .11);
+        }
+    }
+
+    .request__notification{
+        background: #EFF3F8;
+        border: 1px solid #DFE7EF;
+        border-radius: 8px;
+        padding: 11px 19px 11px 25px;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8175rem;
+        line-height: 1rem;
+        color: #282E38;
+        position: relative;
+        margin-bottom: 0.625rem;
+
+        span{
+            font-weight: 600;
+        }
+        .p-button-secondary{
+            position: absolute;
+            top:-10px;
+            right: -5px;
+            width: 26px;
+            height: 26px;
+            padding: 4px;
+
+        }
+    }
+
+    .block-hint {}
+
+    .compound__block_request, .compound__block_match{
+        border: 1px solid var(--indigo-100);
+        width: 100%;
+        min-width: 20vw;
+        background: #F6F9FC;
+        border-radius: 8px;
+        padding: 0;
+        box-sizing: border-box;
+        margin-right: 0.93rem;
+        position: relative;
+        .duppleNums {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            padding: 1px 2px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        .extras-menu {
+            position: absolute;
+            top: -15px;
+            right: 15px;
+            z-index: 10;
+
+            .p-menu- {
+                position: absolute;
+                z-index: 11;
+                top: 24px;
+            }
+
+            .p-button-sm {
+                border-radius: 20px;
+                padding: .32rem 1rem;
+                background: var(--blue-100);
+                border: 1px solid var(--blue-200);
+                color: var(--blue-500);
+
+                span {
+                    font-size: .75rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .hq-menu {
+            position: absolute;
+            bottom: -10px;
+            right: 0px;
+            left: 0px;
+            justify-content: center;
+            display: flex;
+            z-index: 10;
+
+            .p-menu- {
+                position: absolute;
+                z-index: 11;
+                top: 24px;
+            }
+
+            .p-button-sm {
+                border-radius: 20px;
+                padding: .32rem 1rem;
+                background: var(--indigo-50);
+                border: 1px solid var(--indigo-100);
+                color: var(--indigo-900);
+
+                span {
+                    font-size: .75rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &>.p-tag {
+            z-index: 10;
+        }
+
+        .csb {
+
+            &>div:first-child {
+                padding: 1.5rem 1rem 2.62rem 1.06rem;
+            }
+        }
+
+        .request__title{
+            position: absolute;
+            top:-0.625rem;
+            left:1.375rem;
+        }
+
+        .request__player{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: calc(85% - 50px);
+            overflow-y: scroll;
+
+
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+        }
+        .p-button-outlined{
+            width: 100%;
+            min-height: 38px;
+            max-width: 285px;
+            position: absolute;
+            bottom: 15px;
+            left: 17px;
+        }
+    }
+
+    .compound__block_match {
+        .csb {
+
+            &>div:first-child {
+                padding: 24px 16px 16px 17px;
+            }
+        }
+    }
+
+    .compound__block_basic{
+        width: 100%;
+        max-height: 661px;
+        position: relative;
+        background: #F6F9FC;
+        border-radius: 8px;
+        border: 1px solid var(--indigo-100);
+        box-sizing: border-box;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+        .request__title{
+            position: absolute;
+            top: -10px;
+        }
+
+        .basic__group_btn{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 24px;
+            border: 1px solid var(--indigo-100);
+            border-radius: 6px;
+
+
+            span{
+                border: none;
+                background-color: var(--indigo-50);
+                padding: .35rem .75rem;
+                box-sizing: border-box;
+                font-style: normal;
+                font-weight: normal;
+                font-size: .75rem;
+                color: var(--indigo-500);
+                transition: 0.2s;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+
+            }
+            .one{
+
+                border-radius: 6px 0 0 6px;
+                &.active{
+                    background: var(--indigo-500);
+                    border-radius: 6px 0 0 6px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .players-list {
+                border-left: 1px solid var(--indigo-100);
+                border-right: 1px solid var(--indigo-100);
+
+                &.active{
+                    background: var(--indigo-500);
+                    color: #FFFFFF;
+                }
+            }
+
+            .arrangement{
+                border-radius: 0 6px 6px 0;
+                &.active{
+                    background: var(--indigo-500);
+                    border-radius: 0px 6px 6px 0px;
+                    color: #FFFFFF;
+                }
+
+            }
+        }
+
+        .basic__block_compound{
+            width: calc(100% - 30px);
+            max-width: 320px;
+            background: #F6F9FC;
+            border-radius: 8px;
+            height: calc(100% - 74px);
+            //padding: 14px 16px 0px 17px;
+            box-sizing: border-box;
+            margin-right: 15px;
+            margin-left: 15px;
+            position: relative;
+            margin-top: 18px;
+            display: flex;
+            flex-direction: column;
+
+            .basic__notification{
+                background: #FFF5F5;
+                border: 1px solid #DFE7EF;
+                border-radius: 8px;
+                padding: 8px 14px 8px 19px;
+                box-sizing: border-box;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #FF3D32;
+                margin-bottom: 11px;
+            }
+
+            .basic__player{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                height: 100%;
+                width: 100%;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar{
+                    width: 0;
+                }
+            }
+        }
+        .basic__block_arrangement{
+
+            .arrangement__tactic{
+                width: 100%;
+                padding: 0 1rem;
+                background: #F6F9FC;
+                border-radius: 8px;
+                box-sizing: border-box;
+                margin-top: 18px;
+                margin-bottom: 28px;
+
+                .p-inputgroup-addon {
+                    font-size: .75rem;
+                    padding: .5rem 1rem;
+                }
+
+                .p-dropdown {
+
+                    .p-inputtext {
+                        font-size: .75rem;
+                        padding: .5rem 1rem;
+                    }
+
+                    .pi {
+                        font-size: .75rem;
+                    }
+                }
+            }
+
+
+            .field-radiobutton{
+                // margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+
+                .p-radiobutton, .p-component, .p-radiobutton-checked{
+                    display: inline-flex;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    vertical-align: bottom;
+
+                    .p-hidden-accessible{
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+
+                        input{
+                            transform: scale(0);
+                        }
+                    }
+
+                    .p-radiobutton-box, .p-highlight{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .p-radiobutton-icon{
+                            transform: translateZ(0) scale(1);
+                            visibility: visible;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                label{
+                    margin-left: 9px;
+                }
+            }
+            .arrangement__tactic_img{
+                background-image: url('../../../../assets/img/football.svg');
+                width: 100%;
+                height: 230px;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: center;
+                // .tactic__img_block{
+                //     width: 40px;
+                //     height: 40px;
+                //     background: #F7F8F9;
+                //     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                //     border-radius: 6px;
+                //     padding: 11px;
+                //     box-sizing: border-box;
+                //     transition: 0.2s;
+                //
+                //     .pi-clock{
+                //         color:#9FA9B7
+                //     }
+                //     .pi-user{
+                //         color:#FFFFFF
+                //     }
+                // }
+
+            }
+
+            .arrangement__tactic_img.team {
+                display: flex;
+                flex-direction: column;
+                // margin: 0 1rem;
+                // width: calc(100% - 2rem);
+                background-size: contain;
+                position: relative;
+
+                .forws {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-top: 20px;
+                }
+                .middles {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-top: 15px;
+                }
+                .defs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-top: 15px;
+                }
+                .keeper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-top: 20px;
+                }
+
+                &.nomiddls .forws {
+                    display: none;
+                }
+
+                &.nomiddls .middles {
+                    margin-top:35px;
+                }
+                &.nomiddls .defs {
+                    margin-top: 35px;
+                }
+                &.nomiddls .keeper {
+                    margin-top: 35px;
+                }
+                // .tactic__img_block{
+                //     width: 40px;
+                //     height: 40px;
+                //     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                //     border-radius: 6px;
+                //     padding: 11px;
+                //     box-sizing: border-box;
+                //     transition: 0.2s;
+                //
+                //     .pi-clock{
+                //         color:#9FA9B7
+                //     }
+                //     .pi-user{
+                //         color:#FFFFFF
+                //     }
+                //
+                //     &.empty{
+                //         background: #F7F8F9;
+                //     }
+                //     &.active{
+                //         background: #6366F1;
+                //     }
+                //     &.fill {
+                //         background: #CAF1D8;
+                //         color: #1DA750;
+                //         font-size: 14px;
+                //         line-height: 17px;
+                //         text-align: center;
+                //         position: relative;
+                //         display: flex;
+                //         flex-direction: column;
+                //         align-items: center;
+                //
+                //         .tactic-num {
+                //
+                //         }
+                //
+                //         .tactic-surname {
+                //             display: inline-flex;
+                //             align-items: center;
+                //             justify-content: space-around;
+                //             align-self: center;
+                //             //position: absolute;
+                //             background: #F4FCF7;
+                //             box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                //             border-radius: 4px;
+                //             font-size: 10px;
+                //             line-height: 12px;
+                //             text-align: center;
+                //             color: #37404C;
+                //             padding: 2px 5px;
+                //             //bottom: 0;
+                //             z-index: 2;
+                //         }
+                //     }
+                // }
+            }
+
+            .request__notification {
+                color: #6366F1;
+                margin-top: 1rem;
+            }
+
+            .asLink {
+                text-decoration: underline;
+                color: #6366F1;
+                background-color: transparent;
+                outline: none;
+                border: none;
+            }
+
+            .A{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left: 65px;
+                }
+                .b{
+                    position: absolute;
+                    top: 6px;
+                    right: 65px;
+                }
+                .c{
+                    position: absolute;
+                    top:65px;
+                    right: 20px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:140px;
+                }
+                .e{
+                    position: absolute;
+                    top:65px;
+                    left:20px;
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    left:65px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 65px
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+            .B{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left:65px;
+                }
+                .b{
+                    position: absolute;
+                    top: 6px;
+                    right: 65px;
+                }
+                .c{
+                    position: absolute;
+                    top:65px;
+                    right: 65px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:65px;
+                }
+                .e{
+                    position: absolute;
+                    bottom: 50px;
+                    left:40px;
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    left:140px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 40px
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+            .C{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left: 140px;
+                }
+                .b{
+                    position: absolute;
+                    top: 65px;
+                    right: 20px;
+                }
+                .c{
+                    position: absolute;
+                    top:65px;
+                    right: 100px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:100px;
+                }
+                .e{
+                    position: absolute;
+                    top:65px;
+                    left:20px;
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    left:65px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 65px
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+            .D{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left: 140px;
+                }
+                .b{
+                    position: absolute;
+                    top: 65px;
+                    right: 20px;
+                }
+                .c{
+                    position: absolute;
+                    top:65px;
+                    right: 140px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:20px;
+                }
+                .e{
+                    position: absolute;
+                    bottom: 50px;
+                    left:20px;
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 20px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 140px;
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+            .E{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left: 20px;
+                }
+                .b{
+                    position: absolute;
+                    top: 6px;
+                    right:20px;
+                }
+                .c{
+                    position: absolute;
+                    top:6px;
+                    right: 140px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:65px;;
+                }
+                .e{
+                    position: absolute;
+                    top:65px;
+                    right: 65px
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    left:65px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 65px
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+            .G{
+                .a{
+                    position: absolute;
+                    top:6px;
+                    left: 20px;
+                }
+                .b{
+                    position: absolute;
+                    top: 6px;
+                    right:20px;
+                }
+                .c{
+                    position: absolute;
+                    top:6px;
+                    right: 140px;
+                }
+                .d{
+                    position: absolute;
+                    top:65px;
+                    left:140px;
+                }
+                .e{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 140px;
+                }
+                .f{
+                    position: absolute;
+                    bottom: 50px;
+                    left:20px;
+                }
+                .g{
+                    position: absolute;
+                    bottom: 50px;
+                    right: 20px
+                }
+                .h{
+                    position: absolute;
+                    bottom: 0;
+                    right:140px;
+                }
+                .active{
+                    background: #6366F1;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+}

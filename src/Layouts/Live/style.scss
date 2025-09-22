@@ -1,0 +1,22 @@
+.live-view {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 12px;
+    background: linear-gradient(180deg, #F5F5FD 0%, #FFFFFF 69.79%);
+
+    .p-skeleton {
+        background: #f6f6fb;
+
+        &::after {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgb(237 237 249 / 30%));
+        }
+    }
+
+    .subject-emblem {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -38px;
+    }
+}

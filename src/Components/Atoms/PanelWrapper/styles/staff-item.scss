@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    .staff-panel {
+
+        .p-sidebar {
+            .side-notes-player {
+
+                .rectangle-2 {
+                    background: transparent;
+                    padding: 0;
+
+                    .item-actions {
+
+                        .p-button {
+                            margin-top: 12px;
+                            border: 1px solid;
+
+                            .p-button-icon {
+                                margin-right: 0;
+                            }
+
+                            &.p-button-success {
+                                border-color: var(--green-100);
+                            }
+
+                            &.p-button-secondary {
+                                border-color: var(--bluegray-100);
+                                background: var(--bluegray-50);
+                                color: var(--bluegray-400);
+                            }
+
+                            &.p-button-warning {
+                                border-color: var(--orange-100);
+                                background: var(--orange-50);
+                                color: var(--orange-400);
+                            }
+
+                            &.p-button-info {
+                                border-color: var(--indigo-100);
+                                background: var(--indigo-50);
+                                color: var(--indigo-400);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

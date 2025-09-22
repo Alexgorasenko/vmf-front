@@ -1,0 +1,113 @@
+.list {
+    margin: 20px 0 0 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    .addbtn {
+        background: var(--indigo-50);
+        color: var(--indigo-500);
+        border-color: var(--indigo-100);
+        border-radius: 20px;
+    }
+
+    .list-content {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        min-height: 600px;
+        align-items: center;
+        //justify-content: center;
+        .list-data {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            padding-top: 10px;
+
+            .team-btn {
+                width: 100%;
+                margin-bottom: 12px;
+                position: relative;
+
+                .p-button {
+                    justify-content: center;
+                    width: 100%;
+                    box-shadow: 1px 1px 8px rgba(59, 130, 246, .1);
+                    border-radius: 20px;
+                }
+
+                .p-tag {
+                    padding: 2px 7px;
+                    border-radius: 10px;
+                    font-size: 10px;
+                    font-weight: normal;
+                    position: absolute;
+                    right: 10px;
+                    top: -10px;
+                    background: var(--blue-50);
+                    color: var(--blue-600);
+                }
+            }
+        }
+        .item {
+            width: calc(100% - 10px);
+            height: 100px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 14px rgba(59, 130, 246, 0.1);
+            border-radius: 15px;
+            margin-bottom: 18px;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-self: center;
+            padding: 28px 17px 28px 17px;
+            cursor: pointer;
+
+            .text-area {
+                display: flex;
+                flex-direction: column;
+                margin-left: 12px;
+
+                .text {
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: #37404C;
+                }
+
+                .tag {
+                    width: 80px;
+                    margin-top: 3px;
+                    background: #F5F9FF;
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 10.5px;
+                    line-height: 16px;
+
+                    color: #818EA1;
+                }
+
+                .tag-grey {
+                    background: #F7F8F9;;
+                    color: #64748B;;
+                }
+            }
+        }
+        .selected {
+            background: #DADAFC;
+        }
+        button {
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 17px;
+            width: calc(100% - 10px);
+        }
+    }
+}

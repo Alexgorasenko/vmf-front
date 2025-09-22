@@ -1,0 +1,75 @@
+.tip-dialog {
+
+    .p-dialog-header {
+        position: absolute;
+        background: transparent;
+        right: 0px;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .p-dialog-content {
+        padding: 0px;
+        padding-bottom: 0px !important;
+        border-radius: 12px !important;
+        overflow: hidden;
+    }
+}
+
+.tip-content {
+    width: 900px;
+    overflow: hidden;
+
+    .tip-content_media {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: #fff;
+        border-bottom: 1px solid var(--indigo-50);
+
+        &>div {
+            width: 100% !important;
+            aspect-ratio: 16/9;
+            height: unset !important;
+        }
+    }
+
+    .tip-content_body {
+        padding: 20px 40px 0;
+        text-align: center;
+
+        .title {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+
+    .tip-content_actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        .p-button {
+            width: 180px;
+            height: 34px;
+            justify-content: center;
+
+            &.p-button-secondary {
+                background: var(--bluegray-50);
+                // /border: 1px solid var(--bluegray-100);
+                border: none;
+                color: var(--bluegray-300);
+            }
+        }
+    }
+}
+
+@import './medias.scss'

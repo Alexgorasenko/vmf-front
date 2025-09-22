@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    body {
+
+        .custom-tabs {
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 10px;
+            justify-content: center !important;
+
+            .custom-tabs_btn {
+                white-space: nowrap;
+                font-size: 12px;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    }
+}

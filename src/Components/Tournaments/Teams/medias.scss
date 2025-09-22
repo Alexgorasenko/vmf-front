@@ -1,0 +1,52 @@
+@media screen and (max-width: 1440px) {
+    .tournaments {
+
+        .content.within-list {
+            height: calc(100vh - 90px);
+
+            .tournament-struct {
+                height: calc(100vh - 140px);
+
+                .model {
+                    height: calc(100vh - 140px);
+                }
+            }
+
+            .calendar, .calendar > .model {
+                height: calc(100vh - 140px);
+
+                .calendar-card {
+                    height: calc(100vh - 160px);
+                }
+            }
+        }
+    }
+
+    .tournament-teams {
+        margin-top: 10px;
+
+        .title {
+            .p-input-icon-right {
+                margin-bottom: 18px !important;
+            }
+        }
+
+        .teams-content {
+            .team {
+                .emblem.md {
+                    width: 56px;
+                    height: 56px;
+                }
+
+                .text-area {
+                    margin-left: 15px;
+
+                    .text {
+                        font-size: 13px;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

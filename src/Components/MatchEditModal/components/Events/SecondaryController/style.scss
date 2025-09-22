@@ -1,0 +1,212 @@
+.events-controller {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .event-type_control {
+        margin: 10px 10px 0;
+        background: #F6F9FC;
+        border-radius: 12px;
+        padding: 12px;
+        display: flex;
+
+        .p-button {
+            padding: 11px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.4s ease-in-out;
+            border: none;
+
+            &.p-button-secondary {
+                background: var(--bluegray-100);
+                color: var(--bluegray-700);
+            }
+
+            &.p-button-warning {
+                background: var(--yellow-100);
+                color: var(--bluegray-700);
+            }
+
+            &.p-button-danger {
+                background: var(--red-100);
+                color: var(--bluegray-700);
+            }
+        }
+    }
+
+    .step__thee_title{
+        margin-top: 31px;
+        margin-bottom: 8px;
+    }
+
+    .step__thee_button-group{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 24px;
+        left: 50px;
+        right: 50px;
+    }
+
+    .step__thee_event_button-group{
+        display: flex;
+        justify-content: center;
+        margin-top: 19px;
+        margin-bottom: 15px;
+        opacity: 1;
+        transition: 0.2s;
+
+        button{
+            margin-right: 14px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &.unset{
+            opacity: 0;
+            height: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    .step__thee_event{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+        transition: 0.5s;
+        height: calc(86vh - 270px);
+        // overflow: scroll;
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+
+        .event__home{
+            width: 100%;
+            max-width: 260px;
+            margin-right: 21px;
+        }
+        .event__away{
+            width: 100%;
+            max-width: 260px;
+
+        }
+
+        .step__two_main_block{
+            width: 100%;
+            max-width: 260px;
+            margin-right: 21px;
+            animation-name: anime;
+            animation-duration: 2s;
+            @keyframes anime {
+                0% {
+                    opacity: 0
+                }
+                100% {
+                    opacity: 1
+                }
+            }
+
+            &:last-child{
+                margin-right: 0;
+                margin-left: 21px;
+            }
+
+            &.players-list {
+                background: #F6F9FC;
+                border-radius: 8px;
+
+                .block__title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding-top: 10px;
+
+                    .p-button {
+                        background: var(--bluegray-100);
+                        color: var(--bluegray-400);
+                        border: none;
+                        padding: 5px 17px 6px;
+                        border-radius: 12px;
+                        font-size: 13px;
+                        margin-top: 8px;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            .block__player{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 92%;
+                overflow-y: scroll;
+                box-sizing: border-box;
+                padding-left: 20px;
+
+                .item__player_block.dizable {
+                    opacity: 1;
+                }
+
+                .item__player_block {
+                    transition: all .6s ease-in-out;
+
+                    &:hover {
+                        opacity: .88;
+                        background: #fff;
+                        box-shadow: none;
+                    }
+                }
+
+                .item__player_block.player:not(.dizable) {
+                    background: var(--green-100);
+                }
+
+                .block__name {
+                    color: var(--bluegray-800);
+                }
+
+                &::-webkit-scrollbar{
+                    width: 0;
+                }
+
+                .player__null{
+                    background: #F7F7FE;
+                    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    width: 206px;
+                    padding: 14px 5px 14px 34px;
+                    box-sizing: border-box;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+
+                .player{
+                    width: 206px;
+
+                    &:first-child{
+                        margin-top: 10px;
+                    }
+                    .block__number{
+                        width: 32px;
+                        height: 32px;
+                        top:6px;
+                    }
+                }
+            }
+        }
+    }
+}
+//@import './Event/style.scss'

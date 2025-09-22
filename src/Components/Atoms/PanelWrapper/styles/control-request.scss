@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .control__request {
+        width: 100%;
+        background: transparent;
+        margin-top: 40px;
+
+        .control__request_block {
+            width: 100%;
+
+            &>div:first-child {
+                max-height: 60vh;
+            }
+        }
+    }
+}

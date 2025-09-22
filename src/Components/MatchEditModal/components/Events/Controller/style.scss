@@ -1,0 +1,144 @@
+.event-controller {
+    height: calc(90vh - 170px);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    .controller-header {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        width: 100%;
+        background: var(--indigo-50);
+        border: 1px solid var(--indigo-100);
+        border-radius: .3rem;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 .5rem;
+
+        .title {
+            font-size: 1.1rem;
+            width: 60%;
+        }
+
+        .p-button-text {
+            width: 20%;
+            padding-left: .5rem;
+            padding-right: .5rem;
+
+            .pi {
+                font-size: .8rem;
+            }
+
+            span {
+                font-size: .8rem;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .controller-body {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .controller-options {
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-bottom: 100px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--indigo-50) 20%, transparent);
+
+            .option {
+                display: flex;
+                flex-wrap: wrap;
+                height: 80px;
+                margin-top: 1rem;
+                font-weight: 600;
+                justify-content: space-between;
+
+                .label {
+                    width: 100%;
+                    font-size: .8rem;
+                    text-align: center;
+                }
+
+                .icon {
+                    width: 52px;
+                    height: 52px;
+                    background: #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.25s linear;
+                }
+
+                &:hover {
+
+                    .icon {
+                        border-radius: 0;
+                    }
+                }
+
+                .arrow {
+                    height: 52px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 8px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--indigo-500);
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        .controller-content {
+            width: calc((100% - 120px)/2);
+            box-sizing: border-box;
+
+            &:first-child {
+                padding-right: 1rem;
+            }
+
+            &:last-child {
+                padding-left: 1rem;
+
+                .event-item {
+                    background: linear-gradient(to left, transparent, var(--indigo-50) 20%, transparent);
+
+                    .del-trigger {
+                        left: unset;
+                        right: 0;
+                    }
+
+                    .row, .event-type, .person-trigger {
+                        flex-direction: row-reverse;
+                    }
+
+                    .person-select._value {
+                        text-align: right;
+                    }
+
+                    .event-type {
+                        padding-left: unset;
+                        padding-right: 1rem;
+
+                        .icon {
+                            margin-right: unset;
+                            margin-left: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

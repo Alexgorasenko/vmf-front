@@ -1,0 +1,159 @@
+.create-flow {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .select-mode {
+
+        .margin-bottom: 150px;
+
+        .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--bluegray-500);
+            margin-bottom: 40px;
+        }
+
+        .select-mode_options {
+            display: flex;
+
+            .select-mode_option {
+                background: var(--indigo-50);
+                width: 170px;
+                height: 220px;
+                border-radius: 12px;
+                box-shadow: 2px 2px 30px var(--indigo-50);
+                margin: 0 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.88;
+                    box-shadow: none;
+                }
+
+                &.selected {
+                    border: 2px solid var(--indigo-200);
+                    background: var(--indigo-100);
+
+                    .pi {
+                        color: var(--indigo-600);
+                        transition: all 0.4s ease-in-out;
+                    }
+
+                    &>div {
+                        color: var(--bluegray-800);
+                    }
+                }
+
+                .pi {
+                    font-size: 30px;
+                    color: var(--indigo-300);
+                }
+
+                &>div {
+                    font-size: 13px;
+                    text-align: center;
+                    padding: 24px 14px 0;
+                    color: var(--bluegray-600);
+                }
+            }
+        }
+    }
+
+    .p-button {
+        margin: 40px 12px;
+        width: calc(100% - 24px);
+        text-align: center;
+    }
+
+    .externals-list {
+        height: 100%;
+        box-sizing: border-box;
+
+        .title {
+            padding-left: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cards {
+
+            .card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 2px 2px 30px #dadee350;
+                margin-bottom: 12px;
+                padding: 20px;
+                width: 100%;
+
+                .text {
+                    font-size: 13px;
+                    max-height: 44px;
+                    overflow: hidden;
+                }
+
+                .top {
+                    display: flex;
+                    margin-bottom: 12px;
+
+                    .previews {
+                        width: 75%;
+                        display: flex;
+                        justify-content: flex-start;
+                        overflow: hidden;
+                        flex-wrap: wrap;
+
+                        .empty {
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            flex-direction: column;
+                            width: 120px;
+                            aspect-ratio: 16 / 9;
+                            background: var(--bluegray-50);
+                            border-radius: 8px;
+
+                            .pi {
+                                font-size: 18px;
+                            }
+
+                            div {
+                                font-size: 11px;
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+
+                    .meta {
+                        width: 25%;
+                        text-align: right;
+
+                        .date {
+                            font-weight: 300;
+                            text-align: right;
+                            font-size: 13px;
+                            margin-bottom: 4px;
+                        }
+
+                        .p-tag {
+                            transition: all 0.4s linear;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: .88;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
